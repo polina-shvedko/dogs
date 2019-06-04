@@ -5,21 +5,9 @@ let gulp = require('gulp'),
     uglify = require('gulp-uglify');
 purge = require('gulp-css-purge');
 
-let browserSync = require('browser-sync').create();
-let reload = browserSync.reload;
+let livereload = require('gulp-livereload');
 
 let cleanCSS = require('gulp-clean-css');
-
-gulp.task('browser-sync', function () {
-    browserSync.init({
-        server: {
-            baseDir: "app"
-        },
-        port: 81
-    });
-
-    browserSync.reload();
-});
 
 gulp.task('css', () => {
     return gulp.src('src/css/*.css')
@@ -31,7 +19,8 @@ gulp.task('css', () => {
             shorten: true,
             verbose: true
         }))
-        .pipe(gulp.dest('app/css'));
+        .pipe(gulp.dest('app/css'))
+        .pipe(livereload());
 });
 
 gulp.task('js', function () {
@@ -42,7 +31,8 @@ gulp.task('js', function () {
         .pipe(uglify().on('error', function (e) {
             console.log(e);
         }))
-        .pipe(gulp.dest('app/js'));
+        .pipe(gulp.dest('app/js'))
+        .pipe(livereload());
 });
 
 let mustache = require("gulp-mustache");
@@ -52,12 +42,13 @@ gulp.task('html', () => {
         .pipe(mustache({
             msg: "Hello Gulp!"
         }))
-        .pipe(gulp.dest("app"));
+        .pipe(gulp.dest("app"))
+        .pipe(livereload());
 });
 
 gulp.task('watch', ['css', 'js', 'html'], function () {
+    livereload.listen()
     gulp.watch(['src/css/*.css', 'src/js/*.js', 'src/templates/*.html'], ['css', 'js', 'html']);
-    gulp.watch(['app/css/*.css', 'app/js/*.js', 'app/*.html'], ['browser-sync']);
 });
 
 gulp.task('default', ['watch']);
