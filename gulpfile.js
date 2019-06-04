@@ -3,20 +3,19 @@ let gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     concat = require('gulp-concat'),
     uglify = require('gulp-uglify');
-    purge = require('gulp-css-purge');
-
+purge = require('gulp-css-purge');
 
 let cleanCSS = require('gulp-clean-css');
 
 gulp.task('minify-css', () => {
     return gulp.src('src/css/*.css')
         .pipe(cleanCSS({compatibility: 'ie8'}))
-        .pipe(rename({suffix: '-min', prefix: ''}))
+        .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer(['last 15 versions']))
         .pipe(purge({
-            trim : true,
-            shorten : true,
-            verbose : true
+            trim: true,
+            shorten: true,
+            verbose: true
         }))
         .pipe(gulp.dest('app/css'));
 });
@@ -26,7 +25,7 @@ gulp.task('minify-js', function () {
         'src/js/*.js'
     ])
         .pipe(concat('script.min.js'))
-        .pipe(uglify().on('error', function(e){
+        .pipe(uglify().on('error', function (e) {
             console.log(e);
         }))
         .pipe(gulp.dest('app/js'));
