@@ -44,8 +44,8 @@ gulp.task('validateHtml', function () {
 });
 
 gulp.task('css', () => {
-    return gulp.src('src/css/*.css')
-        .pipe(cleanCSS({compatibility: 'ie8'}))
+    return gulp.src('src/css/**/*.css')
+        .pipe(cleanCSS({compatibility: 'ie8', rebase: false}))
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer(['last 15 versions']))
         .pipe(purge({
@@ -59,7 +59,7 @@ gulp.task('css', () => {
 
 gulp.task('js', function () {
     return gulp.src([
-        'src/js/*.js'
+        'src/js/**/*.js'
     ])
         .pipe(concat('script.min.js'))
         .pipe(uglify().on('error', function (e) {
@@ -89,9 +89,14 @@ gulp.task('sitemap', function () {
         .pipe(gulp.dest('./app'));
 });
 
+gulp.task('fonts', function () {
+    gulp.src('src/css/webfonts/**/*.*')
+    .pipe(gulp.dest('app/css/webfonts'));
+});
+
 gulp.task('watch', ['css', 'js', 'html'], function () {
     livereload.listen();
-    gulp.watch(['src/css/*.css', 'src/js/*.js', 'src/templates/*.html'], ['css', 'js', 'html']);
+    gulp.watch(['src/css/*.css', 'src/js/*.js', 'src/templates/**/*.*'], ['css', 'js', 'html']);
 });
 
 gulp.task('validate-html', ['validateHtml']);
