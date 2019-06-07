@@ -8,9 +8,12 @@ let gulp = require('gulp'),
     livereload = require('gulp-livereload'),
     cleanCSS = require('gulp-clean-css'),
     mustache = require("gulp-mustache"),
-    htmlValidator = require('gulp-w3c-html-validator');
+    htmlValidator = require('gulp-w3c-html-validator'),
+    imagemin = require('gulp-imagemin'),
+    sitemap = require('gulp-sitemap'),
+    save = require('gulp-save');
 
-gulp.task('server', function() {
+gulp.task('server', function () {
     gulp.src('app')
         .pipe(server({
             livereload: true,
@@ -19,7 +22,22 @@ gulp.task('server', function() {
         }));
 });
 
-gulp.task('validateHtml', function() {
+gulp.task('img', () =>
+    gulp.src('src/img/*')
+        .pipe(imagemin({
+            interlaced: true,
+            progressive: true,
+            optimizationLevel: 5,
+            svgoPlugins: [
+                {
+                    removeViewBox: true
+                }
+            ]
+        }))
+        .pipe(gulp.dest('app/img'))
+);
+
+gulp.task('validateHtml', function () {
     gulp.src('app/*.html')
         .pipe(htmlValidator())
         .pipe(htmlValidator.reporter());
@@ -59,6 +77,16 @@ gulp.task('html', () => {
         }))
         .pipe(gulp.dest("app"))
         .pipe(livereload());
+});
+
+gulp.task('sitemap', function () {
+    gulp.src('app/*.html', {
+        read: false
+    })
+        .pipe(sitemap({
+            siteUrl: 'http://www.dogs.de'
+        }))
+        .pipe(gulp.dest('./app'));
 });
 
 gulp.task('watch', ['css', 'js', 'html'], function () {
