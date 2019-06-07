@@ -2,12 +2,28 @@ let gulp = require('gulp'),
     rename = require('gulp-rename'),
     autoprefixer = require('gulp-autoprefixer'),
     concat = require('gulp-concat'),
-    uglify = require('gulp-uglify');
-purge = require('gulp-css-purge');
+    uglify = require('gulp-uglify'),
+    purge = require('gulp-css-purge'),
+    server = require('gulp-webserver'),
+    livereload = require('gulp-livereload'),
+    cleanCSS = require('gulp-clean-css'),
+    mustache = require("gulp-mustache"),
+    htmlValidator = require('gulp-w3c-html-validator');
 
-let livereload = require('gulp-livereload');
+gulp.task('server', function() {
+    gulp.src('app')
+        .pipe(server({
+            livereload: true,
+            open: true,
+            port: 7005
+        }));
+});
 
-let cleanCSS = require('gulp-clean-css');
+gulp.task('validateHtml', function() {
+    gulp.src('app/*.html')
+        .pipe(htmlValidator())
+        .pipe(htmlValidator.reporter());
+});
 
 gulp.task('css', () => {
     return gulp.src('src/css/*.css')
@@ -35,10 +51,9 @@ gulp.task('js', function () {
         .pipe(livereload());
 });
 
-let mustache = require("gulp-mustache");
 
 gulp.task('html', () => {
-    return gulp.src("src/templates/*.html")
+    return gulp.src("src/templates/**/*.*")
         .pipe(mustache({
             msg: "Hello Gulp!"
         }))
@@ -47,8 +62,10 @@ gulp.task('html', () => {
 });
 
 gulp.task('watch', ['css', 'js', 'html'], function () {
-    livereload.listen()
+    livereload.listen();
     gulp.watch(['src/css/*.css', 'src/js/*.js', 'src/templates/*.html'], ['css', 'js', 'html']);
 });
 
-gulp.task('default', ['watch']);
+gulp.task('validate-html', ['validateHtml']);
+
+gulp.task('default', ['watch', 'server']);
