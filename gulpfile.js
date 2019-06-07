@@ -5,6 +5,7 @@ let gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     purge = require('gulp-css-purge'),
     server = require('gulp-webserver'),
+    //liveReload extension for browser
     livereload = require('gulp-livereload'),
     cleanCSS = require('gulp-clean-css'),
     mustache = require("gulp-mustache"),
