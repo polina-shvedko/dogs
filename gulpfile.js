@@ -13,6 +13,7 @@ let gulp = require('gulp'),
     sitemap = require('gulp-sitemap'),
     save = require('gulp-save');
 
+//server start
 gulp.task('server', function () {
     gulp.src('app')
         .pipe(server({
@@ -22,6 +23,7 @@ gulp.task('server', function () {
         }));
 });
 
+//images processing
 gulp.task('img', () =>
     gulp.src('src/img/*')
         .pipe(imagemin({
@@ -43,6 +45,7 @@ gulp.task('validateHtml', function () {
         .pipe(htmlValidator.reporter());
 });
 
+//css generation
 gulp.task('css', () => {
     return gulp.src('src/css/**/*.css')
         .pipe(cleanCSS({compatibility: 'ie8', rebase: false}))
@@ -57,6 +60,7 @@ gulp.task('css', () => {
         .pipe(livereload());
 });
 
+//js generation
 gulp.task('js', function () {
     return gulp.src([
         'src/js/**/*.js'
@@ -69,7 +73,7 @@ gulp.task('js', function () {
         .pipe(livereload());
 });
 
-
+//html generation from mustache
 gulp.task('html', () => {
     return gulp.src("src/templates/**/*.*")
         .pipe(mustache({
@@ -79,6 +83,7 @@ gulp.task('html', () => {
         .pipe(livereload());
 });
 
+//generates sitemap
 gulp.task('sitemap', function () {
     gulp.src('app/*.html', {
         read: false
@@ -89,16 +94,21 @@ gulp.task('sitemap', function () {
         .pipe(gulp.dest('./app'));
 });
 
+//copy fonts
 gulp.task('fonts', function () {
     gulp.src('src/css/webfonts/**/*.*')
     .pipe(gulp.dest('app/css/webfonts'));
 });
 
+//watch task
 gulp.task('watch', ['css', 'js', 'html'], function () {
     livereload.listen();
     gulp.watch(['src/css/*.css', 'src/js/*.js', 'src/templates/**/*.*'], ['css', 'js', 'html']);
 });
 
+//validation of html
 gulp.task('validate-html', ['validateHtml']);
 
+
+//default task which is running simply from command line with gulp
 gulp.task('default', ['watch', 'server']);
