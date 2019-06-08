@@ -4,7 +4,10 @@
   "description": "Dogs web-portal",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"server-start": "gulp",
+	"validate-html": "gulp validate-html",
+	"sitemap": "gulp sitemap"
   },
   "author": "Polina Shvedko",
   "license": "ISC",
@@ -17,6 +20,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-css-purge": "^3.0.9",
     "gulp-imagemin": "^4.1.0",
+    "gulp-install": "^1.1.0",
     "gulp-livereload": "^4.0.1",
     "gulp-mustache": "^4.1.1",
     "gulp-notify": "^3.0.0",
