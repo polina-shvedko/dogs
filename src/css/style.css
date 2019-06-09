@@ -41,6 +41,7 @@ h3 {
     font-size: 1.25rem;
 }
 
+/*Block Vorteile*/
 .vorteile {
     background-color: var(--farbeGras);
     height: 6.625rem;
@@ -52,6 +53,7 @@ h3 {
     padding: 0;
 }
 
+/*Unterschrifte*/
 .unterschrift {
     color: white;
     background-color: var(--farbeRot);
@@ -63,7 +65,9 @@ h3 {
     margin: 0.125rem 0 0.25rem 0;
 }
 
-.ueber-unternehmen div {
+/*Block Über Unternehmen*/
+.ueber-unternehmen div,
+.unsere-felder div{
     height: 6rem;
     text-align: center;
     padding: 0.3125rem;
@@ -82,20 +86,36 @@ h3 {
     background-color: var(--farbeKhaki);
 }
 
-.kurzportraet img {
+.kurzportraet img,
+.shop img{
     width: auto;
     height: 3.75rem;
     margin-top: 0.3125rem;
 }
 
-.strategie img {
+.strategie img,
+.pansion img{
     width: 5rem;
     height: auto;
     margin-top: 0.3125rem;
 }
 
-.herkunft img {
+.herkunft img,
+.hundeschule img{
     width: 5rem;
     height: auto;
     margin-top: 0.3125rem;
+}
+
+/*Block unsere Felder*/
+.unsere-felder .shop {
+    background-color: var(--farbeGrüntee);
+}
+
+.unsere-felder .pansion {
+    background-color: var(--farbeKhaki);
+}
+
+.unsere-felder .hundeschule {
+    background-color: var(--farbeGras);
 }
