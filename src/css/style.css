@@ -75,7 +75,7 @@ h3 {
 }
 
 .ueber-unternehmen .kurzportraet {
-    background-color: var(--farbeGras);
+    background-color: var(--farbeKhaki);
 }
 
 .ueber-unternehmen .strategie {
@@ -83,39 +83,44 @@ h3 {
 }
 
 .ueber-unternehmen .herkunft {
-    background-color: var(--farbeKhaki);
+    background-color: var(--farbeGras);
 }
 
 .kurzportraet img,
-.shop img{
+.shop img,
+.pension img{
     width: auto;
     height: 3.75rem;
     margin-top: 0.3125rem;
 }
 
-.strategie img,
-.pansion img{
+.strategie img{
     width: 5rem;
     height: auto;
     margin-top: 0.3125rem;
 }
 
-.herkunft img,
-.hundeschule img{
+.herkunft img{
     width: 5rem;
     height: auto;
-    margin-top: 0.3125rem;
+    margin-top: 0.4375rem;
 }
 
 /*Block unsere Felder*/
 .unsere-felder .shop {
-    background-color: var(--farbeGrüntee);
+    background-color: var(--farbeGras);
 }
 
-.unsere-felder .pansion {
+.unsere-felder .pension {
     background-color: var(--farbeKhaki);
 }
 
 .unsere-felder .hundeschule {
-    background-color: var(--farbeGras);
+    background-color: var(--farbeGrüntee);
+}
+
+.hundeschule img{
+    width: 4.375rem;
+    height: auto;
+    margin-top: 0.4375rem;
 }
