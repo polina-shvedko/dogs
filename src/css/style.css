@@ -16,7 +16,7 @@ body {
 }
 
 h3 {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: black;
     text-align: center;
     font-weight: normal;
@@ -59,14 +59,14 @@ h3 {
 
 .unterschrift h2 {
     text-align: center;
-    font-size: 16px;
-    margin: 2px 0 3px 0;
+    font-size: 1rem;
+    margin: 0.125rem 0 0.25rem 0;
 }
 
 .ueber-unternehmen div {
-    height: 96px;
+    height: 6rem;
     text-align: center;
-    padding: 5px;
+    padding: 0.3125rem;
 
 }
 
@@ -84,18 +84,18 @@ h3 {
 
 .kurzportraet img {
     width: auto;
-    height: 60px;
-    margin-top: 5px;
+    height: 3.75rem;
+    margin-top: 0.3125rem;
 }
 
 .strategie img {
-    width: 80px;
+    width: 5rem;
     height: auto;
-    margin-top: 5px;
+    margin-top: 0.3125rem;
 }
 
 .herkunft img {
-    width: 80px;
+    width: 5rem;
     height: auto;
-    margin-top: 8px;
+    margin-top: 0.3125rem;
 }
