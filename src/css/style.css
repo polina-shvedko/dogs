@@ -4,7 +4,7 @@
     --farbeGrüntee: rgba(153, 153, 102, 1);
     --farbeSepia: rgba(153, 102, 51, 1);
     --farbeGras: rgba(204, 204, 153, 1);
-    --farbeKhaki: rgba(153, 102, 102, 1);
+    --farbeKhaki: rgba(160, 182, 109, 1);
     --meinUebarschrift: 'Righteous', cursive;
 }
 
@@ -40,7 +40,8 @@ body {
     padding: .375rem;
 }
 
-.vorteile div {
+.vorteile div,
+ueber-unternehmen div{
     padding: 0;
 }
 
@@ -54,4 +55,45 @@ body {
     font-size: 16px;
 }
 
+.ueber-unternehmen div{
+    height: 96px;
+    text-align: center;
+    padding: 5px;
 
+}
+.ueber-unternehmen .kurzportraet{
+background-color: var(--farbeGras);
+}
+
+.ueber-unternehmen .strategie{
+    background-color: var(--farbeGrüntee);
+}
+
+.ueber-unternehmen .herkunft{
+    background-color: var(--farbeKhaki);
+}
+.kurzportraet img{
+    width: auto;
+    height: 60px;
+    margin-top: 5px;
+}
+
+.strategie img{
+    width: 80px;
+    height: auto;
+    margin-top: 5px;
+}
+
+.herkunft img{
+    width: 80px;
+    height: auto;
+    margin-top: 8px;
+}
+
+h3{
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 0;
+}

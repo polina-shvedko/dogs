@@ -26,14 +26,17 @@
         </div>
     </div>
     <div class="row ueber-unternehmen">
-        <div class="col-4">
-            <img src="/img/svg/hund_zwei.svg" onerror="this.src='/img/png/hund_zwei.png'">
+        <div class="col-4 kurzportraet">
+            <img src="/img/png/hund_zwei.png">
+            <h3>Kurzporträt</h3>
         </div>
-        <div class="col-4">
-
+        <div class="col-4 strategie">
+            <img src="/img/png/hund_sechs.png">
+            <h3>Strategie</h3>
         </div>
-        <div class="col-4">
-
+        <div class="col-4 herkunft">
+            <img src="/img/png/hund_eins.png">
+            <h3>Herkunft</h3>
         </div>
     </div>
     <div class="row unterschrift">
