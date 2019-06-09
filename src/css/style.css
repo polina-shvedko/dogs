@@ -124,3 +124,31 @@ h3 {
     height: auto;
     margin-top: 0.4375rem;
 }
+
+/*Newsroom*/
+
+.neusroom{
+    background-color: var(--farbeGras);
+    padding: 10px;
+    padding-left: 0;
+    font-size: 12px;
+}
+.neusroom h4{
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    margin: 0;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.neusroom img{
+    margin: 5px;
+}
+
+.teaser{
+    margin-left: 10px;
+}
+
+.newses div{
+    border-bottom: 1px solid white;
+}

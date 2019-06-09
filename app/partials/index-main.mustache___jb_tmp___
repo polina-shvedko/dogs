@@ -44,18 +44,18 @@
             <h2>Unsere Felder</h2>
         </div>
     </div>
-    <div class="row">
-        <div class="col-4 kurzportraet">
-            <img src="/img/png/hund_zwei.png">
-            <h3>Kurzporträt</h3>
+    <div class="row unsere-felder">
+        <div class="col-4 shop">
+            <img src="/img/png/hund_drei.png">
+            <h3>Shop</h3>
         </div>
-        <div class="col-4 strategie">
-            <img src="/img/png/hund_sechs.png">
-            <h3>Strategie</h3>
+        <div class="col-4 pension">
+            <img src="/img/png/hund_fuenf.png">
+            <h3>Pension</h3>
         </div>
-        <div class="col-4 herkunft">
-            <img src="/img/png/hund_eins.png">
-            <h3>Herkunft</h3>
+        <div class="col-4 hundeschule">
+            <img src="/img/png/hund_vier.png">
+            <h3>Hundeschule</h3>
         </div>
     </div>
     <div class="row unterschrift">
@@ -63,8 +63,24 @@
             <h2>Neusroom</h2>
         </div>
     </div>
-    <div class="row">
+    <div class="row neusroom">
+        <div class="col-12">
+            <div class="row">
+                <div class="col-3">
+                    <img src="/img/newsroom/hund_artikel_zwei.png" style="height: 50px; width: 50px;" alt="hund_artikel_zwei">
 
+                </div>
+                <div class="col-9">
+                    <h4>Neus 01 |
+                        <time datetime="2019-06-19">Gestern</time>
+                    </h4>
+                    <p class="teaser">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">News_02</div>
+        <div class="col-12 mehr_anzeigen"><a href="#">Mehr anzeigen</a></div>
     </div>
     <div class="row">
 
