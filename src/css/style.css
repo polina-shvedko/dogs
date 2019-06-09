@@ -15,6 +15,14 @@ body {
     line-height: 1.5;
 }
 
+h3 {
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
 .text-center {
     text-align: center;
 }
@@ -40,8 +48,7 @@ body {
     padding: .375rem;
 }
 
-.vorteile div,
-ueber-unternehmen div{
+.vorteile div {
     padding: 0;
 }
 
@@ -53,47 +60,42 @@ ueber-unternehmen div{
 .unterschrift h2 {
     text-align: center;
     font-size: 16px;
+    margin: 2px 0 3px 0;
 }
 
-.ueber-unternehmen div{
+.ueber-unternehmen div {
     height: 96px;
     text-align: center;
     padding: 5px;
 
 }
-.ueber-unternehmen .kurzportraet{
-background-color: var(--farbeGras);
+
+.ueber-unternehmen .kurzportraet {
+    background-color: var(--farbeGras);
 }
 
-.ueber-unternehmen .strategie{
+.ueber-unternehmen .strategie {
     background-color: var(--farbeGrüntee);
 }
 
-.ueber-unternehmen .herkunft{
+.ueber-unternehmen .herkunft {
     background-color: var(--farbeKhaki);
 }
-.kurzportraet img{
+
+.kurzportraet img {
     width: auto;
     height: 60px;
     margin-top: 5px;
 }
 
-.strategie img{
+.strategie img {
     width: 80px;
     height: auto;
     margin-top: 5px;
 }
 
-.herkunft img{
+.herkunft img {
     width: 80px;
     height: auto;
     margin-top: 8px;
-}
-
-h3{
-    font-size: 14px;
-    color: black;
-    text-align: center;
-    font-weight: normal;
-    margin-bottom: 0;
 }
