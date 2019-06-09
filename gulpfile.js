@@ -25,8 +25,8 @@ gulp.task('server', function () {
 });
 
 //images processing
-gulp.task('img', () =>
-    gulp.src('src/img/*')
+gulp.task('img', function () {
+    gulp.src('src/img/**/*.*')
         .pipe(imagemin({
             interlaced: true,
             progressive: true,
@@ -37,8 +37,8 @@ gulp.task('img', () =>
                 }
             ]
         }))
-        .pipe(gulp.dest('app/img'))
-);
+        .pipe(gulp.dest('app/img'));
+});
 
 gulp.task('validateHtml', function () {
     gulp.src('app/*.html')
@@ -47,16 +47,16 @@ gulp.task('validateHtml', function () {
 });
 
 //css generation
-gulp.task('css', () => {
+gulp.task('css', function () {
     return gulp.src('src/css/**/*.css')
         .pipe(cleanCSS({compatibility: 'ie8', rebase: false}))
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer(['last 15 versions']))
-        .pipe(purge({
-            trim: true,
-            shorten: true,
-            verbose: true
-        }))
+        // .pipe(purge({
+        //     trim: true,
+        //     shorten: true,
+        //     verbose: true
+        // }))
         .pipe(gulp.dest('app/css'))
         .pipe(livereload());
 });
@@ -75,7 +75,7 @@ gulp.task('js', function () {
 });
 
 //html generation from mustache
-gulp.task('html', () => {
+gulp.task('html', function () {
     return gulp.src("src/templates/**/*.*")
         .pipe(mustache({
             msg: "Hello Gulp!"
