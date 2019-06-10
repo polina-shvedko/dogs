@@ -63,6 +63,19 @@ h1 {
     list-style: none;
 }
 
+.navigation a:active,
+.navigation a:hover{
+    text-decoration: none;
+}
+
+.dropdown-link i{
+    font-size: 12px;
+    margin-left: 6px;
+}
+
+.active{
+
+}
 
 /*main*/
 h3 {
@@ -236,4 +249,21 @@ h3 {
 .map iframe {
     width: 100%;
     height: auto;
+}
+
+#zuruek{
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    background-color: var(--farbeApfel);
+    opacity: 0.7;
+    z-index: 100;
+    border-radius: 1rem;
+    text-align: center;
+    padding-top: 2px;
+}
+#zuruek i{
+    color: white;
 }
