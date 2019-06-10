@@ -67,7 +67,7 @@ h3 {
 
 /*Block Über Unternehmen*/
 .ueber-unternehmen div,
-.unsere-felder div{
+.unsere-felder div {
     height: 6rem;
     text-align: center;
     padding: 0.3125rem;
@@ -88,19 +88,19 @@ h3 {
 
 .kurzportraet img,
 .shop img,
-.pension img{
+.pension img {
     width: auto;
     height: 3.75rem;
     margin-top: 0.3125rem;
 }
 
-.strategie img{
+.strategie img {
     width: 5rem;
     height: auto;
     margin-top: 0.3125rem;
 }
 
-.herkunft img{
+.herkunft img {
     width: 5rem;
     height: auto;
     margin-top: 0.4375rem;
@@ -119,7 +119,7 @@ h3 {
     background-color: var(--farbeGrüntee);
 }
 
-.hundeschule img{
+.hundeschule img {
     width: 4.375rem;
     height: auto;
     margin-top: 0.4375rem;
@@ -127,33 +127,57 @@ h3 {
 
 /*Newsroom*/
 
-.neusroom{
+.neusroom {
     background-color: var(--farbeGras);
     padding: 0 10px;
     font-size: 12px;
 }
-.neusroom h4{
+
+.neusroom h4
+
+{
     color: white;
     font-size: 11px;
     font-weight: 700;
     margin: 0;
     margin-left: 10px;
 }
-.neusroom img{
+
+.neusroom img {
     margin: 2px;
     margin-left: -8px;
 }
 
-.teaser{
+.teaser {
     margin-left: 10px;
 }
 
-.newses{
+.newses {
     border-bottom: 1px solid white;
     padding: 10px 0;
 }
 
-.mehr_anzeigen{
+.mehr_anzeigen {
     text-align: right;
-    padding: 10px 0;
+    padding: 3px 0;
+}
+
+/*Kontakt*/
+.kontakt{
+    background-color: var(--farbeKhaki);
+    text-align: center;
+    padding: 0 10px;
+}
+.kontakt h4{
+    font-size: 14px;
+    color:white;
+    margin-top:0.5rem;
+    margin-bottom: 0.4rem;
+}
+.adresse{
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+.border-right{
+    border-right: 1px solid rgba(0,0,0,0.5);
 }
