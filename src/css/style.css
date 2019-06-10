@@ -129,7 +129,7 @@ h3 {
 
 .neusroom{
     background-color: var(--farbeGras);
-    padding: 10px;
+    padding: 0 10px;
     font-size: 12px;
 }
 .neusroom h4{
@@ -150,5 +150,10 @@ h3 {
 
 .newses{
     border-bottom: 1px solid white;
-    padding-bottom: 10px;
+    padding: 10px 0;
+}
+
+.mehr_anzeigen{
+    text-align: right;
+    padding: 10px 0;
 }
