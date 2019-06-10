@@ -133,9 +133,7 @@ h3 {
     font-size: 12px;
 }
 
-.neusroom h4
-
-{
+.neusroom h4 {
     color: white;
     font-size: 11px;
     font-weight: 700;
@@ -163,21 +161,29 @@ h3 {
 }
 
 /*Kontakt*/
-.kontakt{
+.kontakt {
     background-color: var(--farbeKhaki);
     text-align: center;
-    padding: 0 10px;
 }
-.kontakt h4{
+
+.kontakt h4 {
     font-size: 14px;
-    color:white;
-    margin-top:0.5rem;
+    color: white;
+    margin-top: 0.5rem;
     margin-bottom: 0.4rem;
 }
-.adresse{
+
+.adresse {
     font-size: 12px;
     padding-bottom: 5px;
 }
-.border-right{
-    border-right: 1px solid rgba(0,0,0,0.5);
+
+.border-right {
+    border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.map img,
+.map iframe {
+    width: 100%;
+    height: auto;
 }
