@@ -55,6 +55,7 @@ h1 {
 
 .navigation a {
     color: var(--farbeSand);
+    padding: 0.3125rem;
 }
 
 .dropdown{
@@ -74,7 +75,8 @@ h1 {
 }
 
 .active{
-
+    background-color: var(--farbeRot);
+    color: white;
 }
 
 /*main*/
@@ -192,35 +194,35 @@ h3 {
 
 .newsroom {
     background-color: var(--farbeGras);
-    padding: 0 10px;
-    font-size: 12px;
+    padding: 0 0.625rem;
+    font-size: 0.75rem;
 }
 
 .newsroom h4 {
     color: white;
-    font-size: 11px;
+    font-size: 0.6875rem‬;
     font-weight: 700;
     margin: 0;
-    margin-left: 10px;
+    margin-left: 0.625rem;
 }
 
 .newsroom img {
-    margin: 2px;
-    margin-left: -8px;
+    margin: 0.125rem;
+    margin-left: -0.5rem;
 }
 
 .teaser {
-    margin-left: 10px;
+    margin-left: 0.625rem;
 }
 
 .newses {
     border-bottom: 1px solid white;
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 
 .mehr_anzeigen {
     text-align: right;
-    padding: 3px 0;
+    padding: 0.1875rem 0;
 }
 
 /*Kontakt*/
@@ -228,17 +230,17 @@ h3 {
     background-color: var(--farbeKhaki);
     text-align: center;
 }
-
+3/16
 .kontakt h4 {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: white;
     margin-top: 0.5rem;
     margin-bottom: 0.4rem;
 }
 
 .adresse {
-    font-size: 12px;
-    padding-bottom: 5px;
+    font-size: 0.75rem;
+    padding-bottom: 0.3125rem;
 }
 
 .border-right {
@@ -250,10 +252,10 @@ h3 {
     width: 100%;
     height: auto;
 }
-
+/*Footer*/
 #zuruek{
-    width: 32px;
-    height: 32px;
+    width: 2rem;
+    height: 2rem;
     position: fixed;
     bottom: 2rem;
     right: 1rem;
@@ -262,8 +264,22 @@ h3 {
     z-index: 100;
     border-radius: 1rem;
     text-align: center;
-    padding-top: 2px;
+    padding-top: 0.125rem;
 }
 #zuruek i{
     color: white;
 }
+.footer{
+    margin-bottom:0.4rem;
+}
+.footer h4 {
+    text-align: center;
+    font-size: 0.875rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+.footer i{
+    font-size: 1.5625rem;
+    color: var(--farbeGras);
+}
+
