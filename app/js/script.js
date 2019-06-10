@@ -1,0 +1,1 @@
+$(function(){var n=$(".menu").find("i"),i=$(".navigation"),o=$(".dropdown-link");n.on("click",function(n){i.toggle(300)}),o.on("click",function(n){var i=$(this).next("ul");i&&i.toggle(300)})});

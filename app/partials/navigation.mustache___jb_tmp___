@@ -1,8 +1,8 @@
 <nav role="navigation">
-    <ul class="navigation" style="display: none;">
+    <ul class="navigation">
         <li class="nav-item ueber_unternehmen_menu">
-            <a class="dropdown-link" href="#">Über Unternehmen</a>
-            <ul class="dropdown" style="display: none;">
+            <a href="#">Über Unternehmen</a>
+            <ul class="dropdown">
                 <li class="nav-item kurzporträt_menu">
                     <a href="#">Kurzporträt</a>
                 </li>
@@ -15,8 +15,8 @@
             </ul>
         </li>
         <li class="nav-item unsere_felder_menu">
-            <a class="dropdown-link" href="#">Unsere Felder</a>
-            <ul class="dropdown" style="display: none;">
+            <a href="#">Unsere Felder</a>
+            <ul class="dropdown">
                 <li class="nav-item shop_menu">
                     <a href="#">Shop</a>
                 </li>
