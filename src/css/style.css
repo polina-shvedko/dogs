@@ -130,7 +130,6 @@ h3 {
 .neusroom{
     background-color: var(--farbeGras);
     padding: 10px;
-    padding-left: 0;
     font-size: 12px;
 }
 .neusroom h4{
@@ -139,16 +138,17 @@ h3 {
     font-weight: 700;
     margin: 0;
     margin-left: 10px;
-    margin-bottom: 5px;
 }
 .neusroom img{
-    margin: 5px;
+    margin: 2px;
+    margin-left: -8px;
 }
 
 .teaser{
     margin-left: 10px;
 }
 
-.newses div{
+.newses{
     border-bottom: 1px solid white;
+    padding-bottom: 10px;
 }
