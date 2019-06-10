@@ -5,7 +5,8 @@
     --farbeSepia: rgba(153, 102, 51, 1);
     --farbeGras: rgba(204, 204, 153, 1);
     --farbeKhaki: rgba(160, 182, 109, 1);
-    --meinUebarschrift: 'Righteous', cursive;
+    --farbeSand: rgba(255, 204, 153, 1);
+    --meinUebarschrift: 'Courgette', cursive;
 }
 
 body {
@@ -15,6 +16,34 @@ body {
     line-height: 1.5;
 }
 
+/*Header*/
+.heder{
+    height: 64px;
+    background-color: var(--farbeApfel);
+
+}
+
+.motto{
+    padding:15px 10px 0 0;
+}
+
+h1{
+    font-family: var(--meinUebarschrift);
+    letter-spacing:0.05em ;/**/
+    font-size: 12px;
+    color: var(--farbeSand);
+    margin: 0;
+}
+
+.menu{
+    font-size: 35px;
+    color: white;
+    text-align: left;
+    padding: 5px 0 5px 0;
+
+}
+
+/*main*/
 h3 {
     font-size: 0.875rem;
     color: black;
