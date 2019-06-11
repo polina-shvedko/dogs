@@ -31,6 +31,7 @@
     <link rel="stylesheet" href="css/reboot.min.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/grid.min.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/style.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/media-mobile-landscape.min.css" type="text/css" media="all">
     <link rel="stylesheet" href="css/print.min.css" type="text/css" media="print">
 
     <!--FontAwesome icons-->
@@ -40,10 +41,10 @@
 
 <header role="banner" class="container p-0">
     <div class="row heder">
-        <div class="col-3 logo">
-            <img src="/img/thumbs/logo_64.png" alt="logo" width="64" height="64">
+        <div class="col-3 col-sm-2 logo">
+            <img src="/img/png/logo_64.png" alt="logo" width="64" height="64">
         </div>
-        <div class="col-7 motto">
+        <div class="col-7 col-sm-8 motto">
             <h1>Unternehmen für liebevolle Besitzer und aufgezogene Hunde</h1>
         </div>
         <div class="col-2 menu text-right">
@@ -109,10 +110,10 @@
         <div class="col-5">
             <span class="zahle">3</span>Filialen
         </div>
-        <div class="col-6">
+        <div class="col-6 col-sm-7">
             <span class="zahle">14</span>Tsd. der Kunden
         </div>
-        <div class="col-6 text-center">
+        <div class="col-6 col-sm-5 text-center text-sm-left">
             <span class="zahle">280</span>Club der Anhänger
         </div>
     </div>
@@ -184,10 +185,11 @@
         </div>
     </div>
     <div class="row newsroom">
-        <div class="col-12">
+        <div class="col-12 col-sm-6">
             <div class="row newses">
                 <div class="col-2">
-                    <img src="/img/newsroom/hund_artikel_zwei.png" style="height: 50px; width: 50px;" alt="hund_artikel_zwei">
+                    <img src="/img/newsroom/hund_artikel_zwei.png" style="height: 50px; width: 50px;"
+                         alt="hund_artikel_zwei">
 
                 </div>
                 <div class="col-10">
@@ -198,10 +200,11 @@
                 </div>
             </div>
         </div>
-        <div class="col-12">
+        <div class="col-12 col-sm-6">
             <div class="row newses">
                 <div class="col-2">
-                    <img src="/img/newsroom/hund_artikel_drei.png" style="height: 50px; width: 50px;" alt="hund_artikel_drei">
+                    <img src="/img/newsroom/hund_artikel_drei.png" style="height: 50px; width: 50px;"
+                         alt="hund_artikel_drei">
 
                 </div>
                 <div class="col-10">
@@ -212,7 +215,38 @@
                 </div>
             </div>
         </div>
-        <div class="col-12 mehr_anzeigen"><a href="#">Mehr anzeigen</a></div>
+        <div class="col-12 col-sm-6 d-none d-sm-block">
+            <div class="row newses">
+                <div class="col-2">
+                    <img src="/img/newsroom/hund_artikel_drei.png" style="height: 50px; width: 50px;"
+                         alt="hund_artikel_drei">
+
+                </div>
+                <div class="col-10">
+                    <h4>Neus 02 &nbsp;|&nbsp;
+                        <time datetime="2019-06-19">2019-06-19</time>
+                    </h4>
+                    <p class="teaser mb-0">Lorem ipsum dolor sit amet, consec adipiscing elit, sed diam nonumy...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 d-none d-sm-block">
+            <div class="row newses">
+                <div class="col-2">
+                    <img src="/img/newsroom/hund_artikel_drei.png" style="height: 50px; width: 50px;"
+                         alt="hund_artikel_drei">
+
+                </div>
+                <div class="col-10">
+                    <h4>Neus 02 &nbsp;|&nbsp;
+                        <time datetime="2019-06-19">2019-06-19</time>
+                    </h4>
+                    <p class="teaser mb-0">Lorem ipsum dolor sit amet, consec adipiscing elit, sed diam nonumy...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 mehr_anzeigen"><a href="#">Mehr anzeigen</a></div>
     </div>
     <div class="row unterschrift">
         <div class="col-12">
@@ -243,7 +277,8 @@
     </div>
     <div class="row map">
         <div class="col-12 p-0">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d9927.08814742419!2d9.9312386!3d51.5357409!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1560164120110!5m2!1sde!2sde" style="border:0" allowfullscreen></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d9927.08814742419!2d9.9312386!3d51.5357409!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1560164120110!5m2!1sde!2sde"
+                    style="border:0" allowfullscreen></iframe>
             <!--<img src="/img/png/map.png">-->
         </div>
     </div>
@@ -252,18 +287,26 @@
 
 <footer class="container">
     <div class="row footer">
-        <div class="col-12"><h4>Folge uns</h4></div>
-        <div class="col-2"><i class="fab fa-facebook-square"></i></div>
-        <div class="col-2"><i class="fab fa-skype"></i></div>
-        <div class="col-2"><i class="fab fa-whatsapp-square"></i></div>
-        <div class="col-2"><i class="fab fa-twitter-square"></i></div>
-        <div class="col-2"><i class="fab fa-instagram"></i></div>
-        <div class="col-2"><i class="fab fa-youtube-square"></i></div>
-
+        <div class="col-12 unterschrift"><h2>Folge uns</h2></div>
+        <div class="col-12 social-icons">
+            <div class="row">
+                <div class="col-2 text-center"><i class="fab fa-facebook-square"></i></div>
+                <div class="col-2 text-center"><i class="fab fa-skype"></i></div>
+                <div class="col-2 text-center"><i class="fab fa-whatsapp-square"></i></div>
+                <div class="col-2 text-center"><i class="fab fa-twitter-square"></i></div>
+                <div class="col-2 text-center"><i class="fab fa-instagram"></i></div>
+                <div class="col-2 text-center"><i class="fab fa-youtube-square"></i></div>
+            </div>
+        </div>
     </div>
-
-
+    <div class="placeholder row">
+        <div class="col-12">&nbsp;</div>
+    </div>
 </footer>
+<div class="mobile-contact row align-items-center">
+    <div class="col-6 text-center"><i class="far fa-envelope-open"></i></div>
+    <div class="col-6 text-center"><i class="fas fa-phone"></i></div>
+</div>
 <div id="zuruek">
     <i class="fas fa-chevron-up"></i>
 </div>

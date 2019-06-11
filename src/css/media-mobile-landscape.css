@@ -1,0 +1,33 @@
+@media screen and (min-width: 576px) {
+    .text-sm-left {
+        text-align: left;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    .ueber-unternehmen h3,
+    .unsere-felder h3 {
+        padding-top: 1rem;
+    }
+
+    .ueber-unternehmen .row,
+    .unsere-felder .row {
+        height: 11rem;
+    }
+
+    .motto h1 {
+        font-size: 1rem;
+    }
+
+    .motto {
+        padding-right: 0;
+    }
+
+    .adresse,
+    .kontakt h4,
+    .footer h4 {
+        font-size: 1rem;
+    }
+}

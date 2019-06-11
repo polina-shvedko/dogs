@@ -195,13 +195,6 @@ h3 {
     margin-top: 0.4375rem;
 }
 
-@media screen and (min-width: 576px){
-    .ueber-unternehmen .row,
-    .unsere-felder .row {
-        height: 11rem;
-    }
-}
-
 /*Newsroom*/
 
 .newsroom {
@@ -233,6 +226,12 @@ h3 {
 .mehr_anzeigen {
     text-align: right;
     padding: 0.1875rem 0;
+
+}
+
+.mehr_anzeigen a{
+    color: white;
+    text-decoration: underline;
 }
 
 /*Kontakt*/
@@ -265,17 +264,17 @@ h3 {
 
 /*Footer*/
 #zuruek {
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     position: fixed;
-    bottom: 3rem;
+    bottom: 4rem;
     right: 1rem;
-    background-color: var(--farbeRot);
+    background-color: var(--farbeSand);
     opacity: 0.7;
     z-index: 100;
-    border-radius: 1rem;
+    border-radius: 1.5rem;
     text-align: center;
-    padding-top: 0.125rem;
+    padding-top: 0.6rem;
 }
 
 #zuruek i {
@@ -298,3 +297,32 @@ h3 {
     color: var(--farbeGras);
 }
 
+.footer .social-icons{
+    background-color: var(--farbeKhaki);
+    padding-top: 0.625rem;
+    padding-bottom: 0.625rem;
+}
+
+footer .placeholder{
+    min-height: 4rem;
+}
+.mobile-contact{
+    background-color: var(--farbeKhaki);
+    opacity: 0.8;
+    min-height: 4rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.mobile-contact i {
+    font-size: 1.5625rem;
+    color: white;
+}
+.mobile-contact .fa-envelope-square
+{
+    font-size: 1.75rem;
+}
+
+/*From*/
