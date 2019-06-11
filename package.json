@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-	"server-start": "gulp",
-	"validate-html": "gulp validate-html",
-	"image": "gulp img",
-	"sitemap": "gulp sitemap"
+    "server-start": "gulp",
+    "validate-html": "gulp validate-html",
+    "image": "gulp img",
+    "sitemap": "gulp sitemap"
   },
   "author": "Polina Shvedko",
   "license": "ISC",
