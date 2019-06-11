@@ -45,7 +45,7 @@ h1 {
     font-size: 2.1875rem;
     color: white;
     text-align: left;
-    padding: 0.3125rem 0;
+    padding: 0.3125rem 1rem 0.3125rem;
 
 }
 
@@ -136,8 +136,8 @@ h3 {
 }
 
 /*Block Über Unternehmen*/
-.ueber-unternehmen div,
-.unsere-felder div {
+.ueber-unternehmen .row,
+.unsere-felder .row {
     height: 6rem;
     text-align: center;
     padding: 0.3125rem;
@@ -193,6 +193,13 @@ h3 {
     width: 4.375rem;
     height: auto;
     margin-top: 0.4375rem;
+}
+
+@media screen and (min-width: 576px){
+    .ueber-unternehmen .row,
+    .unsere-felder .row {
+        height: 11rem;
+    }
 }
 
 /*Newsroom*/
