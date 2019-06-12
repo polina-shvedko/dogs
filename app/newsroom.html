@@ -58,8 +58,8 @@
                 <div class="col-3 logo">
                     <img src="/img/png/logo_132.png" alt="logo" width="132" height="132">
                 </div>
-                <div class="col-5"></div>
-                <div class="col-4 text-right">
+                <div class="col-4"></div>
+                <div class="col-5 text-right">
 <nav role="navigation" class="container">
     <ul class="navigation">
         <li class="nav-item ueber_unternehmen_menu">
@@ -67,13 +67,13 @@
             <a class="dropdown-link d-none d-md-block"  href="#"><i class="fas fa-chevron-left"></i>Über Unternehmen</a>
             <ul class="dropdown" style="display: none;">
                 <li class="nav-item kurzportraet_menu">
-                    <a href="#kurzportraet">Kurzporträt</a>
+                    <a href="kurzportrait.html">Kurzporträt</a>
                 </li>
                 <li class="nav-item strategie_menu">
-                    <a href="#strategie">Strategie</a>
+                    <a href="strategie.html">Strategie</a>
                 </li>
                 <li class="nav-item herkunft_menu">
-                    <a href="#herkunft">Herkunft</a>
+                    <a href="herkunft.html">Herkunft</a>
                 </li>
             </ul>
         </li>
@@ -82,13 +82,13 @@
             <a class="dropdown-link d-none d-md-block" href="#"><i class="fas fa-chevron-left"></i>Unsere Felder</a>
             <ul class="dropdown" style="display: none;">
                 <li class="nav-item shop_menu">
-                    <a href="#shop">Shop</a>
+                    <a href="shop.html">Shop</a>
                 </li>
                 <li class="nav-item pension_menu">
-                    <a href="#pension">Pension</a>
+                    <a href="pension.html">Pension</a>
                 </li>
                 <li class="nav-item hundeschule_menu">
-                    <a href="#hundeschule">Hundeschule</a>
+                    <a href="hundeschule.html">Hundeschule</a>
                 </li>
             </ul>
         </li>
@@ -100,7 +100,7 @@
         <li class="nav-item impressum_menu d-md-none">
             <a href="impressum.html">Impressum</a></li>
         <li class="nav-item daten_menu d-md-none">
-            <a href="data-protection.html">Datenschutz</a></li>
+            <a href="datenschutz.html">Datenschutz</a></li>
     </ul>
 </nav>
                 </div>
@@ -108,7 +108,6 @@
         </div>
         <div class="col-12"></div>
         <div class="col-12">
-
         </div>
     </div>
 
@@ -120,13 +119,13 @@
             <a class="dropdown-link d-none d-md-block"  href="#"><i class="fas fa-chevron-left"></i>Über Unternehmen</a>
             <ul class="dropdown" style="display: none;">
                 <li class="nav-item kurzportraet_menu">
-                    <a href="#kurzportraet">Kurzporträt</a>
+                    <a href="kurzportrait.html">Kurzporträt</a>
                 </li>
                 <li class="nav-item strategie_menu">
-                    <a href="#strategie">Strategie</a>
+                    <a href="strategie.html">Strategie</a>
                 </li>
                 <li class="nav-item herkunft_menu">
-                    <a href="#herkunft">Herkunft</a>
+                    <a href="herkunft.html">Herkunft</a>
                 </li>
             </ul>
         </li>
@@ -135,13 +134,13 @@
             <a class="dropdown-link d-none d-md-block" href="#"><i class="fas fa-chevron-left"></i>Unsere Felder</a>
             <ul class="dropdown" style="display: none;">
                 <li class="nav-item shop_menu">
-                    <a href="#shop">Shop</a>
+                    <a href="shop.html">Shop</a>
                 </li>
                 <li class="nav-item pension_menu">
-                    <a href="#pension">Pension</a>
+                    <a href="pension.html">Pension</a>
                 </li>
                 <li class="nav-item hundeschule_menu">
-                    <a href="#hundeschule">Hundeschule</a>
+                    <a href="hundeschule.html">Hundeschule</a>
                 </li>
             </ul>
         </li>
@@ -153,7 +152,7 @@
         <li class="nav-item impressum_menu d-md-none">
             <a href="impressum.html">Impressum</a></li>
         <li class="nav-item daten_menu d-md-none">
-            <a href="data-protection.html">Datenschutz</a></li>
+            <a href="datenschutz.html">Datenschutz</a></li>
     </ul>
 </nav>
 <div class="breadcrumbs">
@@ -197,22 +196,31 @@
         </div>
         <div class="col-12"><label for="name_senders">Ihre Name</label></div>
         <div class="col-12">
-            <input type="text" id="name_senders" name="name_absenders" placeholder="Geben Ihre Name ein"/>
+            <input type="text" id="name_senders" name="name_absenders" placeholder="Geben Ihre Name ein" required
+                   maxlength="30"
+            />
         </div>
         <div class="col-12"><label for="mail_senders">Ihre E-mail</label></div>
         <div class="col-12">
-            <input type="email" id="mail_senders" name="mail_absenders" placeholder="Geben Ihre E-mail ein"/>
+            <input type="email" id="mail_senders" name="mail_absenders"
+                   placeholder="Geben Ihre E-mail ein" required maxlength="30" pattern=""
+            />
         </div>
         <div class="col-12"><label for="tel_senders">Ihre Telefonnummer</label></div>
         <div class="col-12">
-            <input type="tel" id="tel_senders" name="tel_absenders" placeholder="Geben Ihre Telefonnummer ein"/>
+            <input type="tel" id="tel_senders" name="tel_absenders" placeholder="Geben Ihre Telefonnummer ein" required
+                   maxlength="15"
+                   pattern=""
+            />
         </div>
         <div class="col-12"><label for="text_nachricht">Ihre Nachricht</label></div>
         <div class="col-12">
-            <textarea name="nachricht" id="text_nachricht" placeholder="Geben Sie Ihre Nachricht ein" rows="5"></textarea>
+            <textarea name="nachricht" id="text_nachricht" placeholder="Geben Sie Ihre Nachricht ein" rows="5" required
+                      maxlength="600"
+                      pattern=""></textarea>
         </div>
-        <div class="col-4"><input type="reset" value="Abschaffen"/></div>
-        <div class="col-8"><input type="submit" value="Absenden"/></div>
+        <div class="col-12 col-sm-4"><input type="reset" value="Abschaffen"/></div>
+        <div class="col-12 col-sm-8"><input type="submit" value="Absenden"/></div>
     </div>
 </form>
         </div>
