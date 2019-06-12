@@ -27,7 +27,7 @@ h1 {
 }
 
 /*Header*/
-header.container{
+header.container {
     padding: 0;
 }
 
@@ -35,7 +35,7 @@ header.container{
     height: 4rem;
     background-color: var(--farbeApfel);
     margin: 0;
-
+    z-index: 1;
 }
 
 .logo {
@@ -96,6 +96,11 @@ header.container{
 }
 
 /*main*/
+
+main.container{
+    z-index: 1;
+}
+
 h3 {
     font-size: 0.875rem;
     color: black;
@@ -187,21 +192,22 @@ h3 {
     margin-top: 0.4375rem;
 }
 
-.ueber-unternehmen .col-4 a{
-    display:inline-block;
-    width:100%;
-    height:100%;
+.ueber-unternehmen .col-4 a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
-.ueber-unternehmen .col-4:hover{
+.ueber-unternehmen .col-4:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px 0 rgba(0, 0, 0, 0.20);
 }
 
-.ueber-unternehmen .col-4:hover a{
+.ueber-unternehmen .col-4:hover a {
     text-decoration: none;
 }
-.ueber-unternehmen .col-4:active{
-    box-shadow: 0 0 2px 0 rgba(0,0,0,0.14), 0 2px 2px 0 rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+
+.ueber-unternehmen .col-4:active {
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.20);
 }
 
 /*Block unsere Felder*/
@@ -223,21 +229,22 @@ h3 {
     margin-top: 0.4375rem;
 }
 
-.unsere-felder .col-4 a{
-    display:inline-block;
-    width:100%;
-    height:100%;
+.unsere-felder .col-4 a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
-.unsere-felder .col-4:hover{
+.unsere-felder .col-4:hover {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px 0 rgba(0, 0, 0, 0.20);
 }
 
-.unsere-felder .col-4:hover a{
+.unsere-felder .col-4:hover a {
     text-decoration: none;
 }
-.unsere-felder .col-4:active{
-    box-shadow: 0 0 2px 0 rgba(0,0,0,0.14), 0 2px 2px 0 rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+
+.unsere-felder .col-4:active {
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.20);
 }
 
 /*Newsroom*/
@@ -329,6 +336,7 @@ h3 {
 }
 
 .footer {
+    z-index: 2;
     margin-bottom: 0.4rem;
 }
 
@@ -424,15 +432,15 @@ input[type="reset"] {
 }
 
 input[type="submit"]:hover,
-input[type="reset"]:hover{
+input[type="reset"]:hover {
     opacity: 0.9;
-    text-shadow:0 1px 2px black;
+    text-shadow: 0 1px 2px black;
 }
 
 input[type="submit"]:focus,
-input[type="reset"]:focus{
+input[type="reset"]:focus {
     outline: none;
-    box-shadow: 0 0 2px 0 rgba(0,0,0,0.14), 0 2px 2px 0 rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.20);
 }
 
 /*h2*/
@@ -455,7 +463,7 @@ input[type="tel"]:focus {
 }
 
 /*Modal window*/
-.contact-form{
+.contact-form {
     display: none;
     position: fixed;
     top: 50%;
@@ -466,26 +474,26 @@ input[type="tel"]:focus {
     z-index: 101;
 }
 
-.close{
+.close {
     color: red;
     z-index: 10;
 }
 
-.close i{
+.close i {
     font-size: 1.5rem;
 }
 
-.senden_nachricht .row{
+.senden_nachricht .row {
     position: relative;
 }
 
-.modal-headline{
+.modal-headline {
     position: relative;
     top: -34px;
     margin-bottom: -34px;
 }
 
-.lightbox{
+.lightbox {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -504,6 +512,7 @@ input[type="tel"]:focus {
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
+
 @-webkit-keyframes rubberBand {
     0% {
         -webkit-transform: scale3d(1, 1, 1);
@@ -534,6 +543,7 @@ input[type="tel"]:focus {
         transform: scale3d(1, 1, 1);
     }
 }
+
 @keyframes rubberBand {
     0% {
         -webkit-transform: scale3d(1, 1, 1);
