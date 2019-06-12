@@ -5,6 +5,13 @@ $(function () {
 
     menuIcon.on('click', function (event) {
         navigation.toggle(300);
+        if($(this).hasClass('fa-bars')){
+            $(this).removeClass('fa-bars');
+            $(this).addClass('fa-times');
+        } else {
+            $(this).addClass('fa-bars');
+            $(this).removeClass('fa-times');
+        }
     });
 
     dropDownLink.on('click', function (event) {
