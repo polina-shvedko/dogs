@@ -76,7 +76,7 @@ gulp.task('js', function () {
 
 //html generation from mustache
 gulp.task('html', function () {
-    return gulp.src("src/templates/**/*.*")
+    return gulp.src(["src/templates/**/*.html", "src/templates/**/*.mustache"])
         .pipe(mustache({
             msg: "Hello Gulp!"
         }))
