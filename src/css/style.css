@@ -6,6 +6,7 @@
     --farbeGras: rgba(204, 204, 153, 1);
     --farbeKhaki: rgba(160, 182, 109, 1);
     --farbeSand: rgba(255, 204, 153, 1);
+    --farbeLogo: rgba(233,215,175,1);
     --meinUebarschrift: 'Courgette', cursive;
 }
 
@@ -331,4 +332,11 @@ footer .placeholder{
     font-size: 1.75rem;
 }
 
-/*Contact form*/
+/*Contact form mit Progressive enhancement*/
+form{
+    width: 400px;
+    margin: 50px auto;
+    padding: 15px 20px;
+    background: var(--farbeKhaki);
+}
+
