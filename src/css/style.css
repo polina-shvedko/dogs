@@ -334,7 +334,7 @@ footer .placeholder{
 
 /*Contact form mit Progressive enhancement*/
 form{
-    width: 400px;
+    width: 100%;
     margin: 50px auto;
     padding: 15px 20px;
     background: var(--farbeKhaki);
