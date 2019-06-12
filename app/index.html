@@ -380,22 +380,31 @@
         </div>
         <div class="col-12"><label for="name_senders">Ihre Name</label></div>
         <div class="col-12">
-            <input type="text" id="name_senders" name="name_absenders" placeholder="Geben Ihre Name ein"/>
+            <input type="text" id="name_senders" name="name_absenders" placeholder="Geben Ihre Name ein" required
+                   maxlength="30"
+            />
         </div>
         <div class="col-12"><label for="mail_senders">Ihre E-mail</label></div>
         <div class="col-12">
-            <input type="email" id="mail_senders" name="mail_absenders" placeholder="Geben Ihre E-mail ein"/>
+            <input type="email" id="mail_senders" name="mail_absenders"
+                   placeholder="Geben Ihre E-mail ein" required maxlength="30" pattern=""
+            />
         </div>
         <div class="col-12"><label for="tel_senders">Ihre Telefonnummer</label></div>
         <div class="col-12">
-            <input type="tel" id="tel_senders" name="tel_absenders" placeholder="Geben Ihre Telefonnummer ein"/>
+            <input type="tel" id="tel_senders" name="tel_absenders" placeholder="Geben Ihre Telefonnummer ein" required
+                   maxlength="15"
+                   pattern=""
+            />
         </div>
         <div class="col-12"><label for="text_nachricht">Ihre Nachricht</label></div>
         <div class="col-12">
-            <textarea name="nachricht" id="text_nachricht" placeholder="Geben Sie Ihre Nachricht ein" rows="5"></textarea>
+            <textarea name="nachricht" id="text_nachricht" placeholder="Geben Sie Ihre Nachricht ein" rows="5" required
+                      maxlength="600"
+                      pattern=""></textarea>
         </div>
-        <div class="col-4"><input type="reset" value="Abschaffen"/></div>
-        <div class="col-8"><input type="submit" value="Absenden"/></div>
+        <div class="col-12 col-sm-4"><input type="reset" value="Abschaffen"/></div>
+        <div class="col-12 col-sm-8"><input type="submit" value="Absenden"/></div>
     </div>
 </form>
         </div>

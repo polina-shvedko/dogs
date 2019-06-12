@@ -379,6 +379,18 @@ input[type="reset"] {
 
 }
 
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    opacity: 0.9;
+    text-shadow:0 1px 2px black;
+}
+
+input[type="submit"]:focus,
+input[type="reset"]:focus{
+    outline: none;
+    box-shadow: 0 0 2px 0 rgba(0,0,0,0.14), 0 2px 2px 0 rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);
+}
+
 /*h2*/
 .unterschrift_form {
     color: white;
@@ -397,3 +409,4 @@ input[type="tel"]:focus {
     box-shadow: 0 0 5px rgba(90, 220, 25, 0.5);
     outline: none;
 }
+
