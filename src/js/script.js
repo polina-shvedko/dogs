@@ -8,7 +8,7 @@ $(function () {
     });
 
     dropDownLink.on('click', function (event) {
-        var childDropdown = $(this).next('ul');
+        var childDropdown = $(this).parent().find('ul.dropdown');
         var icon = $(this).find('i');
 
         if(childDropdown && icon){
