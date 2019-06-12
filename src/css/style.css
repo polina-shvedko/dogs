@@ -360,7 +360,7 @@ textarea, input[type="text"], input[type="email"], input[type="tel"] {
 
 }
 
-input[type="submit"], [type="reset"] {
+input[type="submit"], input[type="reset"] {
     margin-top: 1rem;
     padding: 5px 15px;
     font-weight: bold;
