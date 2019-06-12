@@ -1,5 +1,23 @@
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
     .header-desktop .navigation{
         display: block;
+    }
+
+    .hundeschule img {
+        width: 6.375rem;
+    }
+
+    .kurzportraet img,
+    .shop img,
+    .pension img {
+        height: 5.75rem;
+    }
+
+    .strategie img {
+        width: 7rem;
+    }
+
+    .herkunft img {
+        width: 7rem;
     }
 }
