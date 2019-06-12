@@ -51,4 +51,11 @@ $(function () {
         var modalForm = $('.contact-form');
         modalForm.fadeOut(300);
     });
+
+    $(document).keyup(function(event) {
+        if (event.key === "Escape") {
+            var modalForm = $('.contact-form');
+            modalForm.fadeOut(300);
+        }
+    });
 });
