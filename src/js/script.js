@@ -1,6 +1,6 @@
 $(function () {
     var menuIcon = $('.menu').find('i');
-    var navigation = $('.navigation');
+    var navigation = $('.mobile-navigation').find('.navigation');
     var dropDownLink = $('.dropdown-link');
 
     menuIcon.on('click', function (event) {
