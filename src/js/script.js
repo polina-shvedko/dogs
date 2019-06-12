@@ -37,4 +37,18 @@ $(function () {
             scrollTop: $(".logo").offset().top-32
         }, 500);
     });
+
+    var envelope = $('.mobile-contact').find('.fa-envelope-open');
+
+    envelope.on('click', function (event) {
+        var modalForm = $('.contact-form');
+        modalForm.fadeIn(300);
+    });
+
+    var closeModal = $('.contact-form').find('.fa-times');
+
+    closeModal.on('click', function (event) {
+        var modalForm = $('.contact-form');
+        modalForm.fadeOut(300);
+    });
 });
