@@ -57,6 +57,7 @@ h1 {
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
     margin-bottom: 0;
+    display: none;
 }
 
 .navigation a {
@@ -359,7 +360,7 @@ textarea, input[type="text"], input[type="email"], input[type="tel"] {
 
 }
 
-input[type="submit"], [type="reset"] {
+input[type="submit"], input[type="reset"] {
     margin-top: 1rem;
     padding: 5px 15px;
     font-weight: bold;
