@@ -1,4 +1,12 @@
 @media screen and (min-width: 768px) {
+    header.container{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header-desktop nav.container{
+        padding-right: 0;
+    }
     .header-desktop .navigation{
         display: block;
     }
