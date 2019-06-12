@@ -6,7 +6,7 @@
     --farbeGras: rgba(204, 204, 153, 1);
     --farbeKhaki: rgba(160, 182, 109, 1);
     --farbeSand: rgba(255, 204, 153, 1);
-    --farbeLogo: rgba(233,215,175,1);
+    --farbeLogo: rgba(233, 215, 175, 1);
     --meinUebarschrift: 'Courgette', cursive;
 }
 
@@ -235,7 +235,7 @@ h3 {
 
 }
 
-.mehr_anzeigen a{
+.mehr_anzeigen a {
     color: white;
     text-decoration: underline;
 }
@@ -304,16 +304,17 @@ h3 {
     color: var(--farbeGras);
 }
 
-.footer .social-icons{
+.footer .social-icons {
     background-color: var(--farbeKhaki);
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
 }
 
-footer .placeholder{
+footer .placeholder {
     min-height: 4rem;
 }
-.mobile-contact{
+
+.mobile-contact {
     background-color: var(--farbeKhaki);
     opacity: 0.8;
     min-height: 4rem;
@@ -327,16 +328,70 @@ footer .placeholder{
     font-size: 1.5625rem;
     color: white;
 }
-.mobile-contact .fa-envelope-square
-{
+
+.mobile-contact .fa-envelope-square {
     font-size: 1.75rem;
 }
 
 /*Contact form mit Progressive enhancement*/
-form{
+form {
     width: 100%;
     margin: 50px auto;
     padding: 15px 20px;
-    background: var(--farbeKhaki);
+    background: var(--farbeGras);
+    border: 1px solid #ffffff;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.20);
+
 }
 
+textarea, input {
+    width: 100%;
+}
+
+label {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+textarea, input:not([type="submit"],[type="reset"]) {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 4px 5px;
+    background: white;
+
+}
+
+input[type="submit"], [type="reset"] {
+    margin-top: 1rem;
+    padding: 5px 15px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 25px;
+    border: none;
+
+    /*box-shadow: 0 2px 15px rgba(0, 0, 0, 0.6);*/
+    /*box-shadow: 0 0 2px 0 rgba(0,0,0,0.14), 0 2px 2px 0 rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20);*/
+    /* box-shadow: 0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px 0 rgba(0,0,0,0.20);*/
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px 0 rgba(0, 0, 0, 0.20);
+    /*box-shadow: 0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 3px rgba(0,0,0,0.12), 0 4px 5px 0 rgba(0,0,0,0.20);*/
+    /*box-shadow: 0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px 0 rgba(0,0,0,0.20);*/
+}
+
+input[type="submit"] {
+    background-color: var(--farbeApfel);
+
+}
+
+input[type="reset"] {
+    background-color: var(--farbeSepia);
+
+}
+
+.unterschrift_form { /*h2*/
+    color: white;
+    text-align: center;
+
+}
+
+[for="name_senders"] {
+    margin-top: 0;
+}
