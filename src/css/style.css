@@ -57,6 +57,7 @@ h1 {
     padding-top: 0.625rem;
     padding-bottom: 0.625rem;
     margin-bottom: 0;
+    display: none;
 }
 
 .navigation a {
