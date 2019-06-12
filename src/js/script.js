@@ -43,6 +43,7 @@ $(function () {
     envelope.on('click', function (event) {
         var modalForm = $('.contact-form');
         modalForm.fadeIn(300);
+        toggleLightBox();
     });
 
     var closeModal = $('.contact-form').find('.fa-times');
@@ -50,12 +51,22 @@ $(function () {
     closeModal.on('click', function (event) {
         var modalForm = $('.contact-form');
         modalForm.fadeOut(300);
+        toggleLightBox();
     });
 
     $(document).keyup(function(event) {
         if (event.key === "Escape") {
             var modalForm = $('.contact-form');
             modalForm.fadeOut(300);
+            toggleLightBox();
         }
     });
+
+    function toggleLightBox(){
+        var lightBox = $('.lightbox');
+
+        if(lightBox){
+            lightBox.toggle(100);
+        }
+    }
 });

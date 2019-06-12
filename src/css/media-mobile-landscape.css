@@ -30,4 +30,8 @@
     .footer h4 {
         font-size: 1rem;
     }
+
+    .contact-form{
+        max-width: 75vw;
+    }
 }
