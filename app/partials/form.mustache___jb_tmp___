@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <div class="col-12">
+                    <form class="senden_nachricht" method="post" action="">
+                        <div class="row">
+                                <div class="col-12">
+                                    <label for="senden_nachricht"><h3>Senden uns eine Nachricht</h3></label>
+                                </div>
+                                <div class="col-8"><input type="text" id="name_senders" name="name_absenders" placeholder="Ihre Name"/></div>
+                            <div class="col-5"><label for="name_senders">Ihre Name</label></div>
+                                <div class="col-8"><input type="email" id="mail_senders" name="mail_absenders" placeholder="Ihre E-mail"/></div>
+                            <div class="col-5"><label for="mail_senders">Ihre E-mail</label></div>
+                                <div class="col-8"><input type="tel" id="tel_senders" name="tel_absenders" placeholder="Ihre Telefonnummer"/></div>
+                            <div class="col-5"><label for="tel_senders">Ihre Telefonnummer</label></div>
+                                <div class="col-8">
+                                    <textarea name="nachricht" id="text_nachricht" placeholder="Geben Sie Ihre Nachricht ein" rows="5"></textarea>
+                                </div>
+                                <div class="col-3"><input type="submit" value="Absenden"/></div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
