@@ -589,3 +589,36 @@ input[type="tel"]:focus {
     width: 100%;
     height: auto;
 }
+
+
+
+.background-wrapper {
+    min-height: 800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    height: 100%;
+    display: none;
+}
+
+.background-image{
+    height: 70%;
+    background: url(/img/svg/london_background.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
+    mix-blend-mode: multiply;
+    z-index: 0;
+}
+
+.background-image-cover {
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: var(--farbeApfel);
+    z-index: 0;
+}
