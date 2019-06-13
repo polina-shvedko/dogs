@@ -65,7 +65,7 @@
 
     .background-image-cover{
         height: 800px;
-        width: 100vw;
+        width: 100%;
         position: absolute;
         top: 0;
         background-color: var(--farbeApfel);
@@ -75,5 +75,9 @@
     .mobile-contact,
     footer .placeholder{
         display: none;
+    }
+
+    .vorteile div{
+        padding: 0 15px;
     }
 }
