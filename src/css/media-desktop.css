@@ -96,7 +96,7 @@
 
     .ueber-unternehmen .row,
     .unsere-felder .row{
-        height: 23rem;
+        height: 20rem;
     }
 
     .kurzportraet img,
@@ -120,5 +120,17 @@
 
     .footer i{
         font-size: 3rem;
+    }
+
+    .newsroom{
+
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .ueber-unternehmen .row,
+    .unsere-felder .row{
+        height: 23rem;
     }
 }

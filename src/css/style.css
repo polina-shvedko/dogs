@@ -257,6 +257,7 @@ h3 {
 .newsroom {
     padding: 0 0.625rem;
     font-size: 0.75rem;
+    background-color: var(--farbeGras);
 }
 
 .newsroom > div {

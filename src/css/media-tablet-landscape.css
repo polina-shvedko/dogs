@@ -104,4 +104,19 @@
     .footer i{
         font-size: 2.5rem;
     }
+
+    .map{
+        height: 100%;
+    }
+
+    .map img,
+    .map iframe {
+        height: 100%;
+    }
+
+    /*Kontakt*/
+    .kontakt {
+        text-align: left;
+    }
+
 }
