@@ -97,7 +97,7 @@ header.container {
 
 /*main*/
 
-main.container{
+main.container {
     z-index: 1;
 }
 
@@ -129,19 +129,24 @@ h3 {
 
 /*Block Vorteile*/
 .vorteile {
-    background-color: var(--farbeGras);
     height: 6.625rem;
     font-size: 0.75rem;
     padding: .375rem;
+    background-color: var(--farbeGras);
 }
 
 .vorteile div {
     padding: 0;
+    background-color: var(--farbeGras);
+    border: none;
 }
 
 /*Unterschrifte*/
 .unterschrift {
     color: white;
+}
+
+.unterschrift div {
     background-color: var(--farbeRot);
 }
 
@@ -250,9 +255,14 @@ h3 {
 /*Newsroom*/
 
 .newsroom {
-    background-color: var(--farbeGras);
     padding: 0 0.625rem;
     font-size: 0.75rem;
+    background-color: var(--farbeGras);
+}
+
+.newsroom > div {
+    background-color: var(--farbeGras);
+
 }
 
 .newsroom h4 {
@@ -575,4 +585,44 @@ input[type="tel"]:focus {
         transform: scale3d(1, 1, 1);
     }
 }
+
+
+.img-responsive img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+.background-wrapper {
+    min-height: 800px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    height: 100%;
+    display: none;
+}
+
+.background-image{
+    height: 70%;
+    background: url(/img/svg/london_background.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
+    mix-blend-mode: multiply;
+    z-index: 0;
+}
+
+.background-image-cover {
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background-color: var(--farbeApfel);
+    z-index: 0;
+}
+
 

@@ -1,11 +1,11 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
 
     h1, .h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     h3 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     header.container {
@@ -49,8 +49,22 @@
         width: 7rem;
     }
 
-    .background-wrapper{
-        height: 96%;
+    .background-wrapper {
+        height: 100%;
+    }
+
+    .background-image-cover {
+        height: 800px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        background-color: var(--farbeApfel);
+        z-index: 0;
+    }
+
+    .mobile-contact,
+    footer .placeholder {
+        display: none;
     }
 
     .vorteile {
@@ -58,10 +72,13 @@
     }
 
     .zahle {
-        font-size: 2rem;
+        font-size: 4rem;
     }
 
-
+    .vorteile div {
+        padding: 0 15px;
+        font-size: 1.25rem;
+    }
 
     .dogs{
         position: relative;
@@ -74,49 +91,46 @@
     }
 
     .unterschrift h2{
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     .ueber-unternehmen .row,
     .unsere-felder .row{
-        height: 15rem;
+        height: 20rem;
     }
 
     .kurzportraet img,
     .pension img,
     .shop img{
-        height: 9rem
+        height: 11rem
     }
 
     .strategie img,
     .herkunft img {
-        width: 11.5rem;
+        width: 14rem;
     }
 
     .hundeschule img{
-        width: 11rem;
+        width: 13rem;
     }
 
     .adresse, .footer h4, .kontakt h4 {
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     .footer i{
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
-    .map{
-        height: 100%;
-    }
+    .newsroom{
 
-    .map img,
-    .map iframe {
-        height: 100%;
     }
+}
 
-    /*Kontakt*/
-    .kontakt {
-        text-align: left;
+
+@media screen and (min-width: 1200px) {
+    .ueber-unternehmen .row,
+    .unsere-felder .row{
+        height: 23rem;
     }
-
 }

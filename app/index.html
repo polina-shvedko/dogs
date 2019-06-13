@@ -11,9 +11,6 @@
     <!-- Viewport for responsive web design -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Document Title -->
-    <title>Dogs</title>
-
     <!-- Meta Description -->
     <meta name="description" content="Description of the page less than 150 characters">
 
@@ -24,30 +21,38 @@
 
     <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" href="img/custom-icon.png">
+<title>Dogs</title>
+<!--css-->
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/reboot.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/grid.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/media-mobile-landscape.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/media-tablet-landscape.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/media-desktop.min.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/print.min.css" type="text/css" media="print">
+<!--<link rel="stylesheet" href="css/parallax.min.css" type="text/css" media="all">-->
 
-    <!--css-->
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/reboot.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/grid.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/style.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/media-mobile-landscape.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/media-tablet-landscape.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/print.min.css" type="text/css" media="print">
+<!--FontAwesome icons-->
+<link href="css/fontawesome/all.min.css" rel="stylesheet">
 
-    <!--FontAwesome icons-->
-    <link href="css/fontawesome/all.min.css" rel="stylesheet">
+
 </head>
 <body>
 
+<!--<div class="background-wrapper dzsparallaxer use-loading auto-init height-is-based-on-content mode-scroll loaded dzsprx-readyall">-->
+    <!--<div class="background-image-cover"></div>-->
+    <!--<div class="background-image dzsparallaxer--target"></div>-->
+<!--</div>-->
+<div class="background-wrapper">
+    <div class="background-image-cover"></div>
+    <div class="background-image"></div>
+</div>
 <header role="banner" class="container">
-    <div class="background-wrapper">
-        <div class="background-image-cover"></div>
-        <div class="background-image"></div>
-    </div>
     <div class="row header-mobile d-md-none">
         <div class="col-3 col-sm-2 logo">
-            <img src="/img/png/logo_64.png" alt="logo" width="64" height="64">
+            <a href="index.html"><img src="/img/png/logo_64.png" alt="logo" width="64" height="64"></a>
         </div>
         <div class="col-7 col-sm-8 motto">
             <h1>Unternehmen für liebevolle Besitzer und aufgezogene Hunde</h1>
@@ -60,7 +65,7 @@
         <div class="col-12">
             <div class="row">
                 <div class="col-3 logo">
-                    <img src="/img/png/logo_132.png" alt="logo" width="132" height="132">
+                    <a href="index.html"><img src="/img/png/logo_132.png" alt="logo" width="132" height="132"></a>
                 </div>
                 <div class="col-4"></div>
                 <div class="col-5 text-right pr-0">
@@ -110,11 +115,17 @@
                 </div>
             </div>
         </div>
-        <div class="col-12"></div>
         <div class="col-12">
+            <div class="row dogs">
+                <div class="col-12 text-center img-responsive">
+                    <img src="/img/svg/banner_hunde.svg">
+                </div>
+                <div class="col-12 text-center title">
+                    <h1>Unternehmen für liebevolle Besitzer und aufgezogene Hunde</h1>
+                </div>
+            </div>
         </div>
     </div>
-
 </header>
 <div class="mobile-navigation">
 <nav role="navigation" class="container">
@@ -161,11 +172,8 @@
     </ul>
 </nav>
 </div>
-<div class="breadcrumbs container">
-Home / home
-</div>
 <main role="main" class="container">
-    <div class="row vorteile">
+    <div class="row vorteile p-sm-0">
         <div class="col-7">
             <span class="zahle">72</span>Hunderassen
         </div>
@@ -194,8 +202,7 @@ Home / home
         <div class="col-4 kurzportraet" id="kurzportraet">
             <div class="row align-items-center">
                 <div class="col-12 rubberBand">
-                    <a href="kurzportrait.html">
-                        <img src="/img/svg/hund_zwei.svg" alt="Hund zwei">
+                    <a href="kurzportrait.html"> <img src="/img/svg/hund_zwei.svg" alt="Hund zwei">
                         <h3>Kurzporträt</h3>
                     </a>
                 </div>
@@ -204,8 +211,7 @@ Home / home
         <div class="col-4 strategie" id="strategie">
             <div class="row align-items-center">
                 <div class="col-12 rubberBand">
-                    <a href="strategie.html">
-                        <img src="/img/svg/hund_sechs.svg" alt="Hund sechs">
+                    <a href="strategie.html"> <img src="/img/svg/hund_sechs.svg" alt="Hund sechs">
                         <h3>Strategie</h3>
                     </a>
                 </div>
@@ -214,8 +220,7 @@ Home / home
         <div class="col-4 herkunft" id="herkunft">
             <div class="row align-items-center">
                 <div class="col-12 rubberBand">
-                    <a href="herkunft.html">
-                        <img src="/img/svg/hund_eins.svg" alt="Hund eins">
+                    <a href="herkunft.html"> <img src="/img/svg/hund_eins.svg" alt="Hund eins">
                         <h3>Herkunft</h3>
                     </a>
                 </div>
@@ -231,8 +236,7 @@ Home / home
         <div class="col-4 shop" id="shop">
             <div class="row align-items-center">
                 <div class="col-12 rubberBand">
-                    <a href="shop.html">
-                        <img src="/img/svg/hund_drei.svg" alt="Hund drei">
+                    <a href="shop.html"> <img src="/img/svg/hund_drei.svg" alt="Hund drei">
                         <h3>Shop</h3>
                     </a>
                 </div>
@@ -241,8 +245,7 @@ Home / home
         <div class="col-4 pension" id="pension">
             <div class="row align-items-center">
                 <div class="col-12 rubberBand">
-                    <a href="pension.html">
-                        <img src="/img/svg/hund_fuenf.svg" alt="Hund fünf">
+                    <a href="pension.html"> <img src="/img/svg/hund_fuenf.svg" alt="Hund fünf">
                         <h3>Pension</h3>
                     </a>
                 </div>
@@ -251,26 +254,23 @@ Home / home
         <div class="col-4 hundeschule" id="hundeschule">
             <div class="row align-items-center">
                 <div class="col-12 rubberBand">
-                    <a href="hundeschule.html">
-                        <img src="/img/svg/hund_vier.svg" alt="Hund vier">
+                    <a href="hundeschule.html"> <img src="/img/svg/hund_vier.svg" alt="Hund vier">
                         <h3>Hundeschule</h3>
                     </a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row unterschrift" id="newsroom">
+    <div class="row unterschrift">
         <div class="col-12">
             <h2>Newsroom</h2>
         </div>
     </div>
-    <div class="row newsroom">
-        <div class="col-12 col-sm-6">
+    <div class="row newsroom p-0 p-lg-3">
+        <div class="col-12 col-sm-6 col-md-4">
             <div class="row newses">
                 <div class="col-2">
-                    <img src="/img/newsroom/hund_artikel_zwei.png" style="height: 50px; width: 50px;"
-                         alt="hund_artikel_zwei">
-
+                    <img src="/img/newsroom/hund_artikel_zwei.png" style="height: 50px; width: 50px;" alt="hund_artikel_zwei">
                 </div>
                 <div class="col-10">
                     <h4>Neus 01&nbsp;|&nbsp;
@@ -280,11 +280,36 @@ Home / home
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-6">
+        <div class="col-12 col-sm-6 col-md-4">
             <div class="row newses">
                 <div class="col-2">
-                    <img src="/img/newsroom/hund_artikel_drei.png" style="height: 50px; width: 50px;"
-                         alt="hund_artikel_drei">
+                    <img src="/img/newsroom/hund_artikel_drei.png" style="height: 50px; width: 50px;" alt="hund_artikel_drei">
+                </div>
+                <div class="col-10">
+                    <h4>Neus 02 &nbsp;|&nbsp;
+                        <time datetime="2019-06-19">2019-06-19</time>
+                    </h4>
+                    <p class="teaser mb-0">Lorem ipsum dolor sit amet, consec adipiscing elit, sed diam nonumy...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 d-none d-sm-block">
+            <div class="row newses">
+                <div class="col-2">
+                    <img src="/img/newsroom/hund_artikel_drei.png" style="height: 50px; width: 50px;" alt="hund_artikel_drei">
+                </div>
+                <div class="col-10">
+                    <h4>Neus 02 &nbsp;|&nbsp;
+                        <time datetime="2019-06-19">2019-06-19</time>
+                    </h4>
+                    <p class="teaser mb-0">Lorem ipsum dolor sit amet, consec adipiscing elit, sed diam nonumy...</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 d-none d-sm-block">
+            <div class="row newses">
+                <div class="col-2">
+                    <img src="/img/newsroom/hund_artikel_drei.png" style="height: 50px; width: 50px;" alt="hund_artikel_drei">
 
                 </div>
                 <div class="col-10">
@@ -295,11 +320,10 @@ Home / home
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-6 d-none d-sm-block">
+        <div class="col-12 col-sm-6 col-md-4 d-none d-md-block">
             <div class="row newses">
                 <div class="col-2">
-                    <img src="/img/newsroom/hund_artikel_drei.png" style="height: 50px; width: 50px;"
-                         alt="hund_artikel_drei">
+                    <img src="/img/newsroom/hund_artikel_drei.png" style="height: 50px; width: 50px;" alt="hund_artikel_drei">
 
                 </div>
                 <div class="col-10">
@@ -310,11 +334,10 @@ Home / home
                 </div>
             </div>
         </div>
-        <div class="col-12 col-sm-6 d-none d-sm-block">
+        <div class="col-12 col-sm-6 col-md-4 d-none d-md-block">
             <div class="row newses">
                 <div class="col-2">
-                    <img src="/img/newsroom/hund_artikel_drei.png" style="height: 50px; width: 50px;"
-                         alt="hund_artikel_drei">
+                    <img src="/img/newsroom/hund_artikel_drei.png" style="height: 50px; width: 50px;" alt="hund_artikel_drei">
 
                 </div>
                 <div class="col-10">
@@ -326,13 +349,13 @@ Home / home
             </div>
         </div>
     </div>
-    <div class="col-12 mehr_anzeigen"><a href="#">Mehr anzeigen</a></div>
+    <div class="col-12 mehr_anzeigen"><a href="newsroom.html">Mehr anzeigen</a></div>
     <div class="row unterschrift">
         <div class="col-12">
             <h2>Kontakt&nbsp;&laquo;Churchill&raquo;</h2>
         </div>
     </div>
-    <div class="row kontakt">
+    <div class="row kontakt d-md-none">
         <div class="col-6 border-right">
             <h4>Shop &nbsp;|&nbsp; Pension</h4>
             <div class="row adresse">
@@ -354,12 +377,44 @@ Home / home
             </div>
         </div>
     </div>
-    <div class="row map">
+    <div class="row map d-md-none">
         <div class="col-12 p-0">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d9927.08814742419!2d9.9312386!3d51.5357409!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1560164120110!5m2!1sde!2sde"
-                    style="border:0" allowfullscreen></iframe>
-            <!--<img src="/img/png/map.png">-->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d9927.08814742419!2d9.9312386!3d51.5357409!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1560164120110!5m2!1sde!2sde" style="border:0" allowfullscreen></iframe>
         </div>
+    </div>
+    <div class="row kontakt d-none d-md-flex">
+        <div class="col-4">
+            <div class="row">
+                <div class="col-12 border-right">
+                    <h4>Shop &nbsp;|&nbsp; Pension</h4>
+                    <div class="row adresse">
+                        <div class="col-12">Öffnungszeiten <br>von 8.00 bis 19.00</div>
+                        <div class="col-12">Str. Tumanweg 10</div>
+                        <div class="col-12">Göttingen</div>
+                        <div class="col-12"><a href="mailto:sobacki@gmail.com">sobacki@gmail.com</a></div>
+                        <div class="col-12">Tel.<a href="tel:3957531618">395-753-16-18</a></div>
+                    </div>
+                </div>
+                <div class="col-12 border-right">
+                    <h4>Hundeschule</h4>
+                    <div class="row adresse">
+                        <div class="col-12">Öffnungszeiten <br>von 9.00 bis 14.00</div>
+                        <div class="col-12">Str. Weender 5</div>
+                        <div class="col-12">Göttingen</div>
+                        <div class="col-12"><a href="mailto:schulsob@gmail.com">schulsob@gmail.com</a></div>
+                        <div class="col-12">Tel.<a href="tel:3954223315">395-422-33-15</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="row map d-none d-md-flex">
+                <div class="col-12 p-0">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d9927.08814742419!2d9.9312386!3d51.5357409!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1560164120110!5m2!1sde!2sde" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 </main>
@@ -428,5 +483,6 @@ Home / home
 <div class="lightbox" style="display: none;"></div>
 <script src="/js/jquery.js" type="application/javascript"></script>
 <script src="/js/script.js" type="application/javascript"></script>
+<!--<script src="/js/parallax.js" type="application/javascript"></script>-->
 </body>
 </html>

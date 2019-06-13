@@ -7,6 +7,11 @@
         font-size: 1rem;
     }
 
+    .vorteile div {
+        padding: 0 15px;
+        font-size: 1rem;
+    }
+
     .ueber-unternehmen h3,
     .unsere-felder h3 {
         padding-top: 1rem;
@@ -33,5 +38,13 @@
 
     .contact-form{
         max-width: 75vw;
+    }
+
+    .background-wrapper {
+        display: block;
+    }
+
+    .footer i{
+        font-size: 2rem;
     }
 }
