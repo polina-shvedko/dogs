@@ -52,10 +52,10 @@
     .background-image {
         background: url(/img/svg/london_background.svg);
         -webkit-background-size: cover;
-        background-position-y: -20rem;
+        background-position-y: -31rem;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 600px;
+        height: 800px;
         width: auto;
         display: block;
         opacity: .8;
@@ -64,11 +64,16 @@
     }
 
     .background-image-cover{
-        height: 600px;
+        height: 800px;
         width: 100vw;
         position: absolute;
         top: 0;
         background-color: var(--farbeApfel);
         z-index: 0;
+    }
+
+    .mobile-contact,
+    footer .placeholder{
+        display: none;
     }
 }

@@ -97,7 +97,7 @@ header.container {
 
 /*main*/
 
-main.container{
+main.container {
     z-index: 1;
 }
 
@@ -129,19 +129,24 @@ h3 {
 
 /*Block Vorteile*/
 .vorteile {
-    background-color: var(--farbeGras);
     height: 6.625rem;
     font-size: 0.75rem;
     padding: .375rem;
+    background-color: var(--farbeGras);
 }
 
 .vorteile div {
     padding: 0;
+    background-color: var(--farbeGras);
+    border: none;
 }
 
 /*Unterschrifte*/
 .unterschrift {
     color: white;
+}
+
+.unterschrift div {
     background-color: var(--farbeRot);
 }
 
@@ -250,9 +255,13 @@ h3 {
 /*Newsroom*/
 
 .newsroom {
-    background-color: var(--farbeGras);
     padding: 0 0.625rem;
     font-size: 0.75rem;
+}
+
+.newsroom > div {
+    background-color: var(--farbeGras);
+
 }
 
 .newsroom h4 {
