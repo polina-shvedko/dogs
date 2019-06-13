@@ -146,7 +146,8 @@ h3 {
     color: white;
 }
 
-.unterschrift div {
+.unterschrift div,
+.unterschrift h2{
     background-color: var(--farbeRot);
 }
 
@@ -592,8 +593,6 @@ input[type="tel"]:focus {
     height: auto;
 }
 
-
-
 .background-wrapper {
     min-height: 800px;
     position: absolute;
@@ -606,13 +605,13 @@ input[type="tel"]:focus {
 }
 
 .background-image{
-    height: 70%;
+    height: 60%;
     background: url(/img/svg/london_background.svg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .8;
-    mix-blend-mode: multiply;
+    mix-blend-mode: darken;
     z-index: 0;
 }
 
