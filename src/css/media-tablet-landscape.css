@@ -100,4 +100,8 @@
     .adresse, .footer h4, .kontakt h4 {
         font-size: 1rem;
     }
+
+    .footer i{
+        font-size: 2.5rem;
+    }
 }

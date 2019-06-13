@@ -43,4 +43,8 @@
     .background-wrapper {
         display: block;
     }
+
+    .footer i{
+        font-size: 2rem;
+    }
 }

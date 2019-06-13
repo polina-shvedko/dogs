@@ -117,4 +117,8 @@
     .adresse, .footer h4, .kontakt h4 {
         font-size: 1.25rem;
     }
+
+    .footer i{
+        font-size: 3rem;
+    }
 }
