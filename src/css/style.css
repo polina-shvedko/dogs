@@ -286,6 +286,7 @@ h3 {
     text-decoration: underline;
 }
 
+
 /*Kontakt*/
 .kontakt {
     background-color: var(--farbeKhaki);
@@ -406,7 +407,7 @@ input[type="tel"] {
     border: 1px solid rgba(0, 0, 0, 0.5);
     padding: 4px 5px;
     background: white;
-    box-shadow: inset 0 1px 2px rgba(0, 55, 0, 0.8); /**/
+    box-shadow: inset 0 1px 2px rgba(0, 55, 0, 0.8);
 
 }
 
@@ -574,3 +575,4 @@ input[type="tel"]:focus {
         transform: scale3d(1, 1, 1);
     }
 }
+

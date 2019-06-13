@@ -39,7 +39,7 @@
         width: 7rem;
     }
 
-    .background-wrapper {
+   /* .background-wrapper {
         min-height: 300px;
         display: block;
         position: absolute;
@@ -47,9 +47,9 @@
         left: 0;
         width: 100%;
         z-index: 0;
-    }
+    }*/
 
-    .background-image {
+    /*.background-image {
         background: url(/img/svg/london_background.svg);
         -webkit-background-size: cover;
         background-position-y: -20rem;
@@ -61,14 +61,14 @@
         opacity: .8;
         mix-blend-mode: multiply;
         z-index: 0;
-    }
+    }*/
 
-    .background-image-cover{
+    /*.background-image-cover{
         height: 600px;
         width: 100vw;
         position: absolute;
         top: 0;
         background-color: var(--farbeApfel);
         z-index: 0;
-    }
+    }*/
 }
