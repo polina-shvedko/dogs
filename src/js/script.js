@@ -69,4 +69,13 @@ $(function () {
             lightBox.toggle(100);
         }
     }
+
+    $(window).on("scroll", function() {
+        var header = $('.banner-container');
+        if($(window).scrollTop() >= 320){
+            header.addClass('fixed');
+        } else {
+            header.removeClass('fixed');
+        }
+    });
 });

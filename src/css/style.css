@@ -624,4 +624,20 @@ input[type="tel"]:focus {
     z-index: 0;
 }
 
+.fixed{
+    background-color: var(--farbeApfel);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2000;
+    -webkit-box-shadow: 0px 10px 5px -10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 10px 5px -10px rgba(0,0,0,0.5);
+    box-shadow: 0px 10px 5px -10px rgba(0,0,0,0.5);
+}
+
+.fixed h1{
+    display: block!important;
+}
+
 
