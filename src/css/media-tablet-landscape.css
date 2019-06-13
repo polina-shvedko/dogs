@@ -119,4 +119,11 @@
         text-align: left;
     }
 
+    .navigation-footer .nav-item{
+        font-size: 1.2rem;
+    }
+
+    footer .title h1{
+        font-size: 1.5rem;
+    }
 }
