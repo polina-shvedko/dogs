@@ -309,7 +309,6 @@ h3 {
     text-decoration: underline;
 }
 
-
 .anhang{
     background-color: var(--farbeGrüntee);
     background-size: auto;
@@ -317,22 +316,15 @@ h3 {
 }
 
 .communication {
-    text-align: left;
+    text-align: center;
     background-color: var(--farbeKhaki);
-    padding: 0;
+    font-size: large;
 }
 
 .communication h3{
     color: white;
+    font-size: large;
 }
-
-
-
-}
-
-/*.one_news:active{
-
-}*/
 
 /*Kontakt*/
 .kontakt {
