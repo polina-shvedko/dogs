@@ -304,12 +304,12 @@ h3 {
 }
 
 .communication {
-
-    text-align: left;
     background-color: var(--farbeKhaki);
-    color: white;
     padding: 0;
-    margin-bottom: 15px;
+}
+
+.communication h3{
+    color: white;
 }
 
 /*Kontakt*/
@@ -649,6 +649,7 @@ input[type="tel"]:focus {
     -webkit-box-shadow: 0px 10px 5px -10px rgba(0,0,0,0.5);
     -moz-box-shadow: 0px 10px 5px -10px rgba(0,0,0,0.5);
     box-shadow: 0px 10px 5px -10px rgba(0,0,0,0.5);
+    opacity: 0;
 }
 
 .fixed h1{
