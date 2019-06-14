@@ -30,8 +30,7 @@
 
     li.nav-item {
         min-height: 28px;
-        font-size: 1.5rem;
-        line-height: 2;
+        font-size: 1rem;
     }
 
     .hundeschule img {
@@ -91,6 +90,10 @@
     .dogs img {
         width: 60%;
         height: auto;
+    }
+
+    .background-image {
+        height: 60%;
     }
 
     .unterschrift h2{

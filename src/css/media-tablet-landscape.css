@@ -27,10 +27,6 @@
         background-color: transparent;
     }
 
-    li.nav-item {
-        min-height: 28px;
-    }
-
     .hundeschule img {
         width: 6.375rem;
     }
@@ -61,16 +57,18 @@
         font-size: 2rem;
     }
 
-
-
     .dogs{
         position: relative;
         top: -1rem;
     }
 
     .dogs img {
-        width: 80%;
+        width: 60%;
         height: auto;
+    }
+
+    .background-image {
+        height: 40%;
     }
 
     .unterschrift h2{
