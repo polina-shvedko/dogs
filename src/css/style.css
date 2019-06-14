@@ -657,12 +657,18 @@ input[type="tel"]:focus {
     z-index: 0;
 }
 
+.banner-container-fixed{
+    display: none;
+}
+
 .fixed{
     background-color: var(--farbeApfel);
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    right: 0;
+    width: auto;
     z-index: 2000;
     -webkit-box-shadow: 0px 10px 5px -10px rgba(0,0,0,0.5);
     -moz-box-shadow: 0px 10px 5px -10px rgba(0,0,0,0.5);

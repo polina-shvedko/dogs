@@ -76,7 +76,7 @@ $(function () {
     }
 
     $(window).on("scroll", function() {
-        var header = $('.banner-container');
+        var header = $('.banner-container-fixed');
         if($(window).scrollTop() >= 320){
             header.css({'opacity': 0.5}).addClass('fixed').animate({opacity: 1}, 500);
         } else {
