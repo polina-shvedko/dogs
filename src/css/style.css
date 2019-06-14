@@ -297,15 +297,19 @@ h3 {
 }
 
 
-.row_anhang{
+.anhang{
     background-color: var(--farbeGrüntee);
     background-size: auto;
     color: var(--farbeSand);
 }
 
-.communication h3{
+.communication {
+
+    text-align: left;
     background-color: var(--farbeKhaki);
     color: white;
+    padding: 0;
+    margin-bottom: 15px;
 }
 
 /*Kontakt*/
