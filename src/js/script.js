@@ -77,10 +77,14 @@ $(function () {
 
     $(window).on("scroll", function() {
         var header = $('.banner-container-fixed');
+        var title = $('.dogs').find('.title');
         if($(window).scrollTop() >= 320){
-            header.css({'opacity': 0.5}).addClass('fixed').animate({opacity: 1}, 500);
+            header.slideDown(300);
+            header.css('display', 'flex');
+            title.slideUp(500);
         } else {
-            header.css({'opacity': 0.5}).removeClass('fixed').animate({opacity: 1}, 500);
+            header.slideUp(300);
+            title.slideDown(500);
         }
     });
 });

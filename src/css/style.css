@@ -69,6 +69,10 @@ header.container {
     padding: 0.3125rem;
 }
 
+.banner-container .navigation a:hover {
+    background-color: var(--farbeRot);
+}
+
 .dropdown {
     padding-top: 0;
     padding-bottom: 0;
@@ -309,6 +313,7 @@ h3 {
     text-decoration: underline;
 }
 
+
 .anhang{
     background-color: var(--farbeGrüntee);
     background-size: auto;
@@ -316,15 +321,22 @@ h3 {
 }
 
 .communication {
-    text-align: center;
+    text-align: left;
     background-color: var(--farbeKhaki);
-    font-size: large;
+    padding: 0;
 }
 
 .communication h3{
     color: white;
-    font-size: large;
 }
+
+
+
+}
+
+/*.one_news:active{
+
+}*/
 
 /*Kontakt*/
 .kontakt {
@@ -677,7 +689,6 @@ input[type="tel"]:focus {
 
 .fixed{
     background-color: var(--farbeApfel);
-    display: flex;
     position: fixed;
     top: 0;
     left: 0;
@@ -687,11 +698,35 @@ input[type="tel"]:focus {
     -webkit-box-shadow: 0px 10px 5px -10px rgba(0,0,0,0.5);
     -moz-box-shadow: 0px 10px 5px -10px rgba(0,0,0,0.5);
     box-shadow: 0px 10px 5px -10px rgba(0,0,0,0.5);
-    opacity: 0;
+}
+
+.fixed ul.navigation{
+    padding-left: 0;
+}
+
+.fixed ul.navigation a{
+    padding-left: 0;
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.fixed li.nav-item:hover{
+    background-color: var(--farbeRot);
+}
+
+.fixed li.nav-item {
+    display: inline-block;
 }
 
 .fixed h1{
-    display: block!important;
+    padding-left: 0;
+}
+
+.fixed nav{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
 }
 
 /*Neusrooms*/
