@@ -1,3 +1,8 @@
+$(window).on('load', function () {
+    $('.preloader').fadeOut();
+});
+
+
 $(function () {
     var menuIcon = $('.menu').find('i');
     var navigation = $('.mobile-navigation').find('.navigation');
