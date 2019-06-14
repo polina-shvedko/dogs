@@ -318,26 +318,24 @@ h3 {
     background-color: var(--farbeGrüntee);
     background-size: auto;
     color: var(--farbeSand);
+    padding: 1.7rem 1rem;
 }
 
 .communication {
-    text-align: left;
     background-color: var(--farbeKhaki);
-    padding: 0;
+    font-size: large;
 }
 
-.communication h3{
+.communication h4{
     color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
-
-
+.communication a{
+    font-size: 1.2rem;
+    font-weight: 700;
 }
-
-/*.one_news:active{
-
-}*/
-
 /*Kontakt*/
 .kontakt {
     background-color: var(--farbeKhaki);
@@ -689,6 +687,7 @@ input[type="tel"]:focus {
 
 .fixed{
     background-color: var(--farbeApfel);
+    display: flex;
     position: fixed;
     top: 0;
     left: 0;
