@@ -284,7 +284,20 @@ h3 {
     border-bottom: 1px solid white;
     padding: 0.625rem 0;
 }
+.newses:hover{
+    cursor: pointer;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); /* */
+}
 
+.newses:active{
+    cursor: pointer;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1));
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.14), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.20);/* */
+}
+
+.newses:visited{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
 .mehr_anzeigen {
     text-align: right;
     padding: 0.1875rem 0;
@@ -312,6 +325,14 @@ h3 {
 .communication h3{
     color: white;
 }
+
+
+
+}
+
+/*.one_news:active{
+
+}*/
 
 /*Kontakt*/
 .kontakt {
