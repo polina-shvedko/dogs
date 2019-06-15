@@ -728,5 +728,24 @@ input[type="tel"]:focus {
     padding-left: 0;
 }
 
+/*Breadcrumbs*/
+.breadcrumbs{
+    background-color: var(--farbeRot);
+    color: white;
+}
+
+.breadcrumbs a {
+    color: white;
+    text-decoration: none;
+    margin-left: 0.25rem;
+}
+
+/*kurzportrait*/
+
+.kurzportrait div.col-6{
+    background-color: var(--farbeGras);
+}
+.kurzportrait *{
+}
 /*Neusrooms*/
 

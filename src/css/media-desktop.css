@@ -9,6 +9,10 @@
         font-size: 1.5rem;
     }
 
+    main{
+        margin-bottom: 1rem;
+    }
+
     header.container {
         padding-left: 15px;
         padding-right: 15px;
@@ -125,7 +129,7 @@
     }
 
     .footer i{
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .newsroom{
