@@ -430,7 +430,9 @@ h3 {
 footer .placeholder {
     min-height: 4rem;
 }
-
+.contact .form{
+    background-color: var(--farbeSepia);
+}
 .mobile-contact {
     background-color: var(--farbeKhaki);
     opacity: 0.8;
