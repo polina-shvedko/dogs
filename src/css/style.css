@@ -743,14 +743,10 @@ input[type="tel"]:focus {
     margin-left: 0.25rem;
 }
 
-.strategie div.row.mb-3 div,
-.kurzportraet div.row.mb-3 div{
-    background-color: var(--farbeGras);
+main.kurzportraet h2:first-letter{
+    font-family: var(--meinUebarschrift);
+    font-size: 5rem;
+    color: var(--farbeGras);
 }
-
-.kurzportraet div.row.mb-3 .image{
-    background-color: var(--farbeApfel);
-}
-
 /*Neusrooms*/
 
