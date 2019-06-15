@@ -18,12 +18,15 @@ body, html {
     line-height: 1.5;
 }
 
-h1 {
+h1, .h1 {
     font-family: var(--meinUebarschrift);
     letter-spacing: 0.05em;
-    font-size: 0.75rem;
     color: var(--farbeSand);
     margin: 0;
+}
+
+.motto h1,.motto .h1{
+    font-size: 0.75rem;
 }
 
 /*Header*/
@@ -69,7 +72,7 @@ header.container {
     padding: 0.3125rem;
 }
 
-.banner-container .navigation a:hover {
+.navigation a:hover {
     background-color: var(--farbeRot);
 }
 
@@ -740,12 +743,14 @@ input[type="tel"]:focus {
     margin-left: 0.25rem;
 }
 
-/*kurzportrait*/
-
-.kurzportrait div.col-6{
+.strategie div.row.mb-3 div,
+.kurzportraet div.row.mb-3 div{
     background-color: var(--farbeGras);
 }
-.kurzportrait *{
+
+.kurzportraet div.row.mb-3 .image{
+    background-color: var(--farbeApfel);
 }
+
 /*Neusrooms*/
 
