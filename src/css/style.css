@@ -262,7 +262,6 @@ h3 {
 /*Newsroom*/
 
 .newsroom {
-    padding: 0 0.625rem;
     font-size: 0.75rem;
     background-color: var(--farbeGras);
 }
@@ -355,6 +354,11 @@ h3 {
 .kontakt {
     background-color: var(--farbeKhaki);
     text-align: center;
+}
+
+.kontakt div{
+    background-color: var(--farbeKhaki);
+
 }
 
 .kontakt h4 {
