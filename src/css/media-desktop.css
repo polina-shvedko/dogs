@@ -147,6 +147,10 @@
     .contact .map{
         min-height: 20rem;
     }
+
+    .contact .form .close i{
+        visibility: hidden;
+    }
 }
 
 
