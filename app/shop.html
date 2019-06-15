@@ -32,6 +32,7 @@
 <link rel="stylesheet" href="css/media-tablet-landscape.min.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/media-desktop.min.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/print.min.css" type="text/css" media="print">
+
 <!--<link rel="stylesheet" href="css/parallax.min.css" type="text/css" media="all">-->
 
 <!--FontAwesome icons-->
@@ -162,6 +163,85 @@
     </div>
     <div class="row">
         <div class="col-12">
+<link rel="stylesheet" href="css/slider.min.css" type="text/css" media="screen"/>
+
+<div class="container-slider">
+
+<!--Buttons-->
+    <input type="radio" id="i1" name="images" checked/>
+    <input type="radio" id="i2" name="images"/>
+    <input type="radio" id="i3" name="images"/>
+    <input type="radio" id="i4" name="images"/>
+    <input type="radio" id="i5" name="images"/>
+    <input type="radio" id="i6" name="images"/>
+
+<!--Slide 1-->
+    <div class="slide_img" id="one">
+
+        <img src="/img/svg/hunde_sleider_eins.svg">
+
+        <label class="prev" for="i6"><span></span></label>
+        <label class="next" for="i2"><span></span></label>
+
+    </div>
+
+    <!--Slide 2-->
+    <div class="slide_img" id="two">
+
+        <img src="/img/svg/hunde_sleider_zwei.svg">
+
+        <label class="prev" for="i1"><span></span></label>
+        <label class="next" for="i3"><span></span></label>
+
+    </div>
+
+    <!--Slide 3-->
+    <div class="slide_img" id="three">
+        <img src="/img/svg/hunde_sleider_drei.svg">
+
+        <label class="prev" for="i2"><span></span></label>
+        <label class="next" for="i4"><span></span></label>
+    </div>
+
+    <!--Slide 4-->
+    <div class="slide_img" id="four">
+        <img src="/img/svg/hunde_sleider_elf.svg">
+
+        <label class="prev" for="i3"><span></span></label>
+        <label class="next" for="i5"><span></span></label>
+
+    </div>
+
+    <!--Slide 5-->
+    <div class="slide_img" id="five">
+        <img src="/img/svg/hunde_sleider_sechs.svg">
+
+        <label class="prev" for="i4"><span></span></label>
+        <label class="next" for="i6"><span></span></label>
+
+    </div>
+
+    <!--Slide 6-->
+    <div class="slide_img" id="six">
+        <img src="/img/svg/hunde_sleider_acht.svg">
+
+        <label class="prev" for="i5"><span></span></label>
+        <label class="next" for="i1"><span></span></label>
+
+    </div>
+
+    <!--Labels-->
+    <div id="nav_slide">
+        <label for="i1" class="dots" id="dot1"></label>
+        <label for="i2" class="dots" id="dot2"></label>
+        <label for="i3" class="dots" id="dot3"></label>
+        <label for="i4" class="dots" id="dot4"></label>
+        <label for="i5" class="dots" id="dot5"></label>
+        <label for="i6" class="dots" id="dot6"></label>
+    </div>
+
+</div>
+
         </div>
     </div>
 </main>

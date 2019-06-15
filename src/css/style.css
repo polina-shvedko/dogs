@@ -766,5 +766,9 @@ main.kurzportraet h2:first-letter{
     font-size: 5rem;
     color: var(--farbeGras);
 }
-/*Neusrooms*/
+
+
+.content{
+    background-color: var(--farbeApfel);
+}
 
