@@ -60,7 +60,7 @@
     }
 
     .background-image-cover {
-        height: 800px;
+        height: 60%;
         width: 100%;
         position: absolute;
         top: 0;
@@ -93,6 +93,15 @@
 
     .dogs img {
         width: 60%;
+        height: auto;
+    }
+
+    .dogs img.page-image {
+        width: 25%;
+        height: auto;
+    }
+    .dogs img.page-image-landscape {
+        width: 35%;
         height: auto;
     }
 

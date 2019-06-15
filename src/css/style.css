@@ -291,9 +291,21 @@ h3 {
     border-bottom: 1px solid white;
     padding: 0.625rem 0;
 }
-.newses:hover{
+/*.newses:hover{*/
+    /**/
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); !* *!*/
+/*}*/
+
+.newses:hover {
+    -webkit-box-shadow: 0 3px 7px rgba(0,0,0,.2);
+    box-shadow: 0 3px 7px rgba(0,0,0,.2);
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    -ms-transform: translate(0,-5px);
+    -webkit-transform: translate(0,-5px);
+    transform: translate(0,-5px);
     cursor: pointer;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); /* */
 }
 
 .newses:active{
