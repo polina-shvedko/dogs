@@ -118,10 +118,14 @@
     }
 
     .navigation-footer .nav-item{
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 
     footer .title h1{
         font-size: 1.5rem;
+    }
+
+    .footer{
+        margin-bottom: 0;
     }
 }

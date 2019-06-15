@@ -74,17 +74,4 @@ $(function () {
             lightBox.toggle(100);
         }
     }
-
-    $(window).on("scroll", function() {
-        var header = $('.banner-container-fixed');
-        var title = $('.dogs').find('.title');
-        if($(window).scrollTop() >= 320){
-            header.slideDown(300);
-            header.css('display', 'flex');
-            title.slideUp(500);
-        } else {
-            header.slideUp(300);
-            title.slideDown(500);
-        }
-    });
 });

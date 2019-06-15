@@ -323,7 +323,7 @@ h3 {
 
 .communication {
     background-color: var(--farbeKhaki);
-    font-size: large;
+    padding: 1.7rem 1rem;
 }
 
 .communication h4{
