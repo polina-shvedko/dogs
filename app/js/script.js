@@ -91,4 +91,42 @@ $(function () {
             header.removeClass('fixed');
         }
     });
+
+    $('.senden_nachricht').on('submit', function (event) {
+        var nameSenders = $(this).find('#name_senders');
+        var mailSenders = $(this).find('#mail_senders');
+        var telSenders = $(this).find('#tel_senders');
+        var textNachricht = $(this).find('#text_nachricht');
+
+        if(nameSenders.val() === ''){
+            alert('Die Name vom Sender kann nicht leehr sein!');
+            event.stopPropagation();
+            event.preventDefault();
+            return false;
+        }
+
+        if(mailSenders.val() === ''){
+            alert('Das Mail vom Sender kann nicht leehr sein!');
+            event.stopPropagation();
+            event.preventDefault();
+            return false;
+        }
+
+        if(telSenders.val() === ''){
+            alert('Der Telefonnummer vom Sender kann nicht leehr sein!');
+            event.stopPropagation();
+            event.preventDefault();
+            return false;
+        }
+
+        if(textNachricht.val() === ''){
+            alert('Der Text von der Nachricht kann nicht leehr sein!');
+            event.stopPropagation();
+            event.preventDefault();
+            return false;
+        }
+
+        $(event.target()).submit();
+        return true;
+    });
 });
