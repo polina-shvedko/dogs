@@ -290,7 +290,7 @@ h3 {
     border-bottom: 1px solid white;
     padding: 0.625rem 0;
 }
-.news-block img{
+.news-block figure{
     float: left;
     max-width: 25%;
     height: auto;
