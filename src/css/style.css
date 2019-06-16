@@ -813,3 +813,9 @@ main.strategie p:first-letter{
 .impressum{
     color: var(--farbeSand);
 }
+
+.noscroll {
+    overflow: hidden;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+}

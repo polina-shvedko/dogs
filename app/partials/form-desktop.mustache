@@ -1,0 +1,30 @@
+<form class="senden_nachricht" method="post" action="/index.php">
+    <div class="row">
+        <div class="col-12 close text-right"><i class="fas fa-times"></i></div>
+        <div class="col-12 modal-headline">
+            <h2 class="unterschrift_form">Senden uns eine Nachricht</h2>
+        </div>
+        <div class="col-12"><label for="name_senders_desktop">Ihre Name</label></div>
+        <div class="col-12">
+            <input type="text" id="name_senders_desktop" name="name_absenders" placeholder="Geben Ihre Name ein" required
+                   maxlength="255"/>
+        </div>
+        <div class="col-12"><label for="mail_senders_desktop">Ihre E-mail</label></div>
+        <div class="col-12">
+            <input type="email" id="mail_senders_desktop" name="mail_absenders" placeholder="Geben Ihre E-mail ein" required
+                   maxlength="255"/>
+        </div>
+        <div class="col-12"><label for="tel_senders_desktop">Ihre Telefonnummer</label></div>
+        <div class="col-12">
+            <input type="text" id="tel_senders_desktop" name="tel_absenders" placeholder="Geben Ihre Telefonnummer ein" required
+                   maxlength="10" pattern="[0-9]{10}"/>
+        </div>
+        <div class="col-12"><label for="text_nachricht_desktop">Ihre Nachricht</label></div>
+        <div class="col-12">
+            <textarea name="nachricht" id="text_nachricht_desktop" placeholder="Geben Sie Ihre Nachricht ein" rows="3" required
+                      maxlength="600"></textarea>
+        </div>
+        <div class="col-12 col-sm-4"><input type="reset" value="Abschaffen"/></div>
+        <div class="col-12 col-sm-8"><input type="submit" value="Absenden"/></div>
+    </div>
+</form>

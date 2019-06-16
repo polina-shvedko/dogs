@@ -77,6 +77,8 @@ $(function () {
 
         if(lightBox){
             lightBox.toggle(100);
+            $('body').toggleClass('noscroll');
+            $('.fixed').toggleClass('fixed');
         }
     }
 
