@@ -125,6 +125,12 @@ header.container {
 }
 
 /*Navigation*/
+.mobile-navigation{
+    background-color: var(--farbeApfel);
+}
+.mobile-navigation nav .navigation  {
+    background-color: var(--farbeApfel);
+}
 .navigation {
     background-color: var(--farbeApfel);
     list-style: none;
