@@ -1,6 +1,7 @@
 :root {
     --farbeRot: rgba(195, 51, 51, 1);
     --farbeApfel: rgba(102, 153, 51, 1);
+    --farbeApfelBlur: rgba(102, 153, 51, 0.8);
     --farbeGrüntee: rgba(153, 153, 102, 1);
     --farbeSepia: rgba(153, 102, 51, 1);
     --farbeGras: rgba(204, 204, 153, 1);
@@ -880,7 +881,7 @@ main.strategie p:first-letter{
 
 
 .content{
-    background-color: var(--farbeApfel);
+    background-color: var(--farbeApfelBlur);
 }
 
 .impressum{
