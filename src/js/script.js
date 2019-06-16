@@ -68,7 +68,7 @@ $(function () {
     });
 
     function toggleLightBox(){
-        var lightBox = $('.lightbox');
+        var lightBox = $('.lightbox-modal');
 
         if(lightBox){
             lightBox.toggle(100);

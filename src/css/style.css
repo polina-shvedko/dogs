@@ -564,7 +564,7 @@ input[type="tel"]:focus {
     margin-bottom: -34px;
 }
 
-.lightbox {
+.lightbox-modal {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -761,9 +761,14 @@ input[type="tel"]:focus {
     margin-left: 0.25rem;
 }
 
-main.kurzportraet h2:first-letter{
+main.kurzportraet p:first-letter,
+main.pension p:first-letter,
+main.hundeschule p:first-letter,
+main.strategie p:first-letter{
+    float: left; /* Выравнивание по левому краю */
+    margin: -15px 5px 0 0; /* Отступы вокруг буквы */
     font-family: var(--meinUebarschrift);
-    font-size: 5rem;
+    font-size: 3rem;
     color: var(--farbeGras);
 }
 
