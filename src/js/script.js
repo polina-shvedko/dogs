@@ -8,9 +8,16 @@ $(function () {
     var navigation = $('.mobile-navigation').find('.navigation');
     var dropDownLink = $('.dropdown-link');
 
+    function scrollTo(element) {
+        $([document.documentElement, document.body]).animate({
+            scrollTop: $(element).offset().top - 32
+        }, 500);
+    }
+
     menuIcon.on('click', function (event) {
         navigation.toggle(300);
         if($(this).hasClass('fa-bars')){
+            scrollTo(".mobile-navigation");
             $(this).removeClass('fa-bars');
             $(this).addClass('fa-times');
         } else {
@@ -38,9 +45,7 @@ $(function () {
 
     var scrollTop = $("#zuruek");
     scrollTop.on("click", function (event) {
-        $([document.documentElement, document.body]).animate({
-            scrollTop: $(".logo").offset().top-32
-        }, 500);
+        scrollTo("header");
     });
 
     var envelope = $('.mobile-contact').find('.fa-envelope-open');
@@ -74,4 +79,14 @@ $(function () {
             lightBox.toggle(100);
         }
     }
+
+    $(window).on("scroll", function() {
+        var header = $('.header-mobile');
+        if($(window).scrollTop() >= 65){
+            header.addClass('fixed');
+            header.slideDown(300);
+        } else {
+            header.removeClass('fixed');
+        }
+    });
 });
