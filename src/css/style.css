@@ -305,7 +305,7 @@ h3 {
 }
 
 .news-block .content{
-    background-color: var(--farbeApfel);
+    background-color: var(--farbeGras);
     padding-top: 1rem;
 }
 
@@ -360,14 +360,13 @@ h3 {
 
 
 .anhang{
-    background-color: var(--farbeGrüntee);
+    background-color: var(--farbeApfel);
     background-size: auto;
-    color: var(--farbeSand);
     padding: 1.7rem 1rem;
 }
 
 .communication {
-    background-color: var(--farbeKhaki);
+    background-color: var(--farbeApfel);
     padding: 1.7rem 1rem;
 }
 
@@ -380,6 +379,7 @@ h3 {
 .communication a{
     font-size: 1.2rem;
     font-weight: 700;
+    color: white;
 }
 /*Kontakt*/
 .kontakt {
@@ -795,6 +795,8 @@ input[type="tel"]:focus {
 main.kurzportraet p:first-letter,
 main.pension p:first-letter,
 main.hundeschule p:first-letter,
+main.datenschutz p:first-letter,
+.row_anhang p:first-letter,
 main.strategie p:first-letter{
     float: left; /* Выравнивание по левому краю */
     margin: -15px 5px 0 0; /* Отступы вокруг буквы */
@@ -808,3 +810,6 @@ main.strategie p:first-letter{
     background-color: var(--farbeApfel);
 }
 
+.impressum{
+    color: var(--farbeSand);
+}
