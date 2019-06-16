@@ -290,10 +290,21 @@ h3 {
     border-bottom: 1px solid white;
     padding: 0.625rem 0;
 }
-/*.newses:hover{*/
-    /**/
-    /*background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)); !* *!*/
-/*}*/
+.news-block img{
+    float: left;
+    max-width: 25%;
+    height: auto;
+    margin: 0.5rem 1rem 1rem 0;
+}
+
+.news-block .content{
+    background-color: var(--farbeApfel);
+    padding-top: 1rem;
+}
+
+.news-block .content-wrapper{
+    background-color: var(--farbeApfel);
+}
 
 .newses:hover {
     -webkit-box-shadow: 0 3px 7px rgba(0,0,0,.2);
@@ -316,6 +327,19 @@ h3 {
 .newses:visited{
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 }
+
+.newses a,
+.newses a:hover{
+    text-decoration: none;
+}
+
+.newses a h4{
+    color: white;
+}
+.newses a p{
+    color: #212529;
+}
+
 .mehr_anzeigen {
     text-align: right;
     padding: 0.1875rem 0;
