@@ -535,8 +535,8 @@ h3 {
 footer .placeholder {
     min-height: 4rem;
 }
-.contact .form{
-    background-color: var(--farbeSepia);
+.contact .form{ /*Wrapper für Form auf Seite Kontakt*/
+    background-color: var(--farbeGrüntee);
 }
 .mobile-contact {
     background-color: var(--farbeKhaki);
@@ -620,7 +620,7 @@ input[type="reset"]:focus {
 }
 
 /*h2*/
-.unterschrift_form {
+.unterschrift_form, h2.text-center { /*Unterschrift für Hundeschule*/
     color: white;
     text-align: center;
 
