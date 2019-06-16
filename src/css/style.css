@@ -297,6 +297,13 @@ h3 {
     margin: 0.5rem 1rem 1rem 0;
 }
 
+.news-block .widget img{
+    float: none;
+    max-width: 100%;
+    height: auto;
+    margin: .125rem .125rem .125rem -.5rem;
+}
+
 .news-block .content{
     background-color: var(--farbeApfel);
     padding-top: 1rem;
