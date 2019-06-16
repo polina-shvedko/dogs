@@ -1,7 +1,11 @@
+/*Preloader*/
+
 $(window).on('load', function () {
     $('.preloader').fadeOut();
 });
 
+
+/*Menz*/
 
 $(function () {
     var menuIcon = $('.menu').find('i');
@@ -43,11 +47,13 @@ $(function () {
         }
     });
 
+/*Button Zurück*/
     var scrollTop = $("#zuruek");
     scrollTop.on("click", function (event) {
         scrollTo("header");
     });
 
+/*Ivent Form*/
     var envelope = $('.mobile-contact').find('.fa-envelope-open');
 
     envelope.on('click', function (event) {
@@ -72,6 +78,7 @@ $(function () {
         }
     });
 
+/* LightBox*/
     function toggleLightBox(){
         var lightBox = $('.lightbox-modal');
 
@@ -91,7 +98,7 @@ $(function () {
             header.removeClass('fixed');
         }
     });
-
+/*Überprüfung Kontakt Form*/
     $('.senden_nachricht').on('submit', function (event) {
         var nameSenders = $(this).find('#name_senders');
         var mailSenders = $(this).find('#mail_senders');
