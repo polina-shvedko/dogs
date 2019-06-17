@@ -119,8 +119,22 @@ $(function () {
             return false;
         }
 
+        if(mailSenders.val().indexOf('@') === -1){
+            alert('Das Mail vom Sender soll @ haben!');
+            event.stopPropagation();
+            event.preventDefault();
+            return false;
+        }
+
         if(telSenders.val() === ''){
             alert('Der Telefonnummer vom Sender kann nicht leehr sein!');
+            event.stopPropagation();
+            event.preventDefault();
+            return false;
+        }
+
+        if(/^([0-9]{10})$/.test(telSenders.val()) === false){
+            alert('Der Telefonnummer kann nur 10 Zahle haben!');
             event.stopPropagation();
             event.preventDefault();
             return false;
