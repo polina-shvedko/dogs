@@ -1,1 +1,140 @@
-@media screen and (min-width:768px){.h1,h1{font-size:1.5rem}h3{font-size:1.2rem}.background-wrapper{display:block}header.container{padding-left:15px;padding-right:15px;z-index:0}.header-desktop{z-index:1}.header-desktop nav.container{padding-right:0}.header-desktop .navigation{display:block;background-color:transparent}.hundeschule img{width:6.375rem}.kurzportraet img,.pension img,.shop img{height:5.75rem}.strategie img{width:7rem}.herkunft img{width:7rem}.background-wrapper{height:96%}.vorteile{height:auto}.zahle{font-size:2rem}.dogs{position:relative;top:-1rem}.dogs img{width:60%;height:auto}.dogs img.page-image{width:25%;height:auto}.dogs img.page-image-landscape{width:35%;height:auto}.background-image{height:40%}.unterschrift h2{font-size:1.25rem}.ueber-unternehmen .row,.unsere-felder .row{height:15rem}.kurzportraet img,.pension img,.shop img{height:9rem}.herkunft img,.strategie img{width:11.5rem}.hundeschule img{width:11rem}.adresse,.footer h4,.kontakt h4{font-size:1rem}.footer i{font-size:2.5rem}.map{height:100%}.map iframe,.map img{height:100%}.kontakt{text-align:left}.navigation-footer .nav-item{font-size:.8rem}footer .title h1{font-size:1.5rem}.footer{margin-bottom:0}}
+@media screen and (min-width: 768px) {
+
+    h1, .h1 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+    .background-wrapper {
+        display: block;
+    }
+    header.container {
+        padding-left: 15px;
+        padding-right: 15px;
+        z-index: 0;
+    }
+
+    .header-desktop {
+        z-index: 1;
+    }
+
+    .header-desktop nav.container {
+        padding-right: 0;
+    }
+
+    .header-desktop .navigation {
+        display: block;
+        background-color: transparent;
+    }
+
+    .hundeschule img {
+        width: 6.375rem;
+    }
+
+    .kurzportraet img,
+    .shop img,
+    .pension img {
+        height: 5.75rem;
+    }
+
+    .strategie img {
+        width: 7rem;
+    }
+
+    .herkunft img {
+        width: 7rem;
+    }
+
+    .background-wrapper{
+        height: 96%;
+    }
+
+    .vorteile {
+        height: auto;
+    }
+
+    .zahle {
+        font-size: 2rem;
+    }
+
+    .dogs{
+        position: relative;
+        top: -1rem;
+    }
+
+    .dogs img {
+        width: 60%;
+        height: auto;
+    }
+    .dogs img.page-image {
+        width: 25%;
+        height: auto;
+    }
+    .dogs img.page-image-landscape {
+        width: 35%;
+        height: auto;
+    }
+    .background-image {
+        height: 40%;
+    }
+
+    .unterschrift h2{
+        font-size: 1.25rem;
+    }
+
+    .ueber-unternehmen .row,
+    .unsere-felder .row{
+        height: 15rem;
+    }
+
+    .kurzportraet img,
+    .pension img,
+    .shop img{
+        height: 9rem
+    }
+
+    .strategie img,
+    .herkunft img {
+        width: 11.5rem;
+    }
+
+    .hundeschule img{
+        width: 11rem;
+    }
+
+    .adresse, .footer h4, .kontakt h4 {
+        font-size: 1rem;
+    }
+
+    .footer i{
+        font-size: 2.5rem;
+    }
+
+    .map{
+        height: 100%;
+    }
+
+    .map img,
+    .map iframe {
+        height: 100%;
+    }
+
+    /*Kontakt*/
+    .kontakt {
+        text-align: left;
+    }
+
+    .navigation-footer .nav-item{
+        font-size: 0.8rem;
+    }
+
+    footer .title h1{
+        font-size: 1.5rem;
+    }
+
+    .footer{
+        margin-bottom: 0;
+    }
+}
